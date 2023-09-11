@@ -2,7 +2,13 @@
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-![🇬🇧](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-united-kingdom_1f1ec-1f1e7.png)
+<center>
+<a href="#IT"><img style="height:25px" src="https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-italy_1f1ee-1f1f9.png" /></a> 🤍 <a href="#EN"><img style="height:25px" src="https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-united-kingdom_1f1ec-1f1e7.png" /></a>
+</center>
+
+<hr />
+
+![🇬🇧](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-united-kingdom_1f1ec-1f1e7.png) <a name="EN"></A>
 # Data Exchange Formats: CSV, XML, and JSON 📂
 
 👋 Hello everyone! Welcome to this first example, dedicated to the most important data exchange formats: **CSV**, **XML**, and **JSON**.
@@ -24,7 +30,8 @@ It's like the lingua franca of tabular data.
 ### **XML**: *Structure and Hierarchy* 🧬
 
 XML (eXtensible Markup Language) is the king of data structure.
-With well-defined tags, it offers a clear hierarchy and structured data. It is widely used to represent documents, complex data, and configurations.
+With well-defined tags, it offers a clear hierarchy and structured data.
+It is widely used to represent documents, complex data, and configurations.
 
 #### **JSON**: *Flexibility and Readability* 🧩
 
@@ -47,10 +54,13 @@ You will see how these formats can represent data differently and how they can b
 
 Data exchange formats are the heart of modern data communication.
 Knowing how to use them is essential for any developer, analyst, or IT professional.
-So, explore the repository, learn from our examples, and experiment with the data! Happy learning! 📊💡👨‍💻
+So, explore the repository, learn from our examples, and experiment with the data!
 
+Happy learning! 📊💡👨‍💻
 
-![🇮🇹](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-italy_1f1ee-1f1f9.png)
+<hr/>
+
+![🇮🇹](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-italy_1f1ee-1f1f9.png) <a name="IT"></A>
 # Formati di Interscambio Dati: CSV, XML e JSON 📂
 
 👋 Ciao a tutti! Benvenuti in questo primo esempio, dedicato ai formati di interscambio dati più importanti: **CSV**, **XML** e **JSON**.
@@ -72,7 +82,8 @@ Una serie di dati separati da virgole è intuitiva e può essere aperta con qual
 ### **XML**: *Struttura e Gerarchia* 🧬
 
 XML (eXtensible Markup Language) è il re della struttura dati.
-Con tag ben definiti, offre una gerarchia chiara e dati strutturati. È ampiamente utilizzato per rappresentare documenti, dati complessi e configurazioni.
+Con tag ben definiti, offre una gerarchia chiara e dati strutturati.
+È ampiamente utilizzato per rappresentare documenti, dati complessi e configurazioni.
 
 #### **JSON**: *Flessibilità e Lettura* 🧩
 
