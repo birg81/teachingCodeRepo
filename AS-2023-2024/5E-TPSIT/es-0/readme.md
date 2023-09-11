@@ -6,7 +6,7 @@
 # Data Exchange Formats: CSV, XML, and JSON 📂
 
 👋 Hello everyone! Welcome to this first example, dedicated to the most important data exchange formats: **CSV**, **XML**, and **JSON**.
-In this repository, we will explore the extraordinary importance of these formats for data representation.
+In this example, we will explore the extraordinary importance of these formats for data representation.
 
 ## Why File Formats Are Crucial 📊
 
@@ -54,7 +54,7 @@ So, explore the repository, learn from our examples, and experiment with the dat
 # Formati di Interscambio Dati: CSV, XML e JSON 📂
 
 👋 Ciao a tutti! Benvenuti in questo primo esempio, dedicato ai formati di interscambio dati più importanti: **CSV**, **XML** e **JSON**.
-In questo repository, esploreremo la straordinaria importanza di questi formati per la rappresentazione dei dati.
+In questo esempio, esploreremo la straordinaria importanza di questi formati per la rappresentazione dei dati.
 
 ## Perché i Format File Sono Cruciali 📊
 
