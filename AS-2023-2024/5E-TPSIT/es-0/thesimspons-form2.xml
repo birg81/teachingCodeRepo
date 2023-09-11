@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<charactersList>
+	<character lastname="Simpson" firstname="Homer" isMale="true"/>
+	<character lastname="Bouvier" firstname="Marge" isMale="false"/>
+	<character lastname="Simpson" firstname="Bart" isMale="true"/>
+	<character lastname="Simpson" firstname="Lisa" isMale="false"/>
+	<character lastname="Simpson" firstname="Maggie" isMale="false"/>
+	<character lastname="Flanders" firstname="Ned" isMale="true"/>
+	<character lastname="Flanders" firstname="Maude" isMale="false"/>
+	<character lastname="Wiggum" firstname="Chief" isMale="true"/>
+	<character lastname="Wiggum" firstname="Ralph" isMale="true"/>
+	<character lastname="Smithers" firstname="Waylon" isMale="true"/>
+	<character lastname="Burns" firstname="Montgomery" isMale="true"/>
+	<character lastname="Krabappel" firstname="Edna" isMale="false"/>
+	<character lastname="Bouvier" firstname="Patty" isMale="false"/>
+	<character lastname="Bouvier" firstname="Selma" isMale="false"/>
+	<character lastname="Brockman" firstname="Kent" isMale="true"/>
+</charactersList>

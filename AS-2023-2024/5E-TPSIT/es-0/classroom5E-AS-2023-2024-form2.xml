@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<studentsList>
+	<student lastname="Cannavale" firstname="Gennaro" isMale="true" />
+	<student lastname="Caprio" firstname="Salvatore" isMale="true" />
+	<student lastname="Carrano" firstname="Francesco Paolo" isMale="true" />
+	<student lastname="Cioffi" firstname="Raffaele" isMale="true" />
+	<student lastname="Coscarelli" firstname="Graziano" isMale="true" />
+	<student lastname="Cuomo" firstname="Andrea" isMale="true" />
+	<student lastname="D'Esposito" firstname="Luigi" isMale="true" />
+	<student lastname="Di Somma" firstname="Giovanni" isMale="true" />
+	<student lastname="Donnarumma" firstname="Giovanni" isMale="true" />
+	<student lastname="Esposito" firstname="Simone" isMale="true" />
+	<student lastname="Ferraro" firstname="Giuseppe" isMale="true" />
+	<student lastname="Langellotti" firstname="Giuseppe" isMale="true" />
+	<student lastname="Lopindo" firstname="Giuseppe" isMale="true" />
+	<student lastname="Martino" firstname="Giuseppe" isMale="true" />
+	<student lastname="Ruggiero" firstname="Francesco Pio" isMale="true" />
+	<student lastname="Russo" firstname="Adriano" isMale="true" />
+	<student lastname="Tramparulo" firstname="Vincenzo" isMale="true" />
+	<student lastname="Verde" firstname="Giovanni" isMale="true"
+</studentsList>
