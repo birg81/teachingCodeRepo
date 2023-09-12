@@ -97,7 +97,7 @@ In entrambe le cartelle, trovi i dati nei formati **CSV**, **XML** e **JSON**.
 In questo modo potrai confrontare facilmente i diversi formati.
 Inoltre, c'è un file **SQL** per creare un database con una tabella contenente questi dati.
 
-## Perché i Format File Sono Cruciali 📊
+## Perché i Formati di Interscambio Dati sono Cruciali 📊
 
 I formati di interscambio dati come CSV, XML e JSON sono il linguaggio universale dei dati digitali.
 Li troviamo ovunque!
