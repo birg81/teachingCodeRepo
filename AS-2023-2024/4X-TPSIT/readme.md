@@ -30,9 +30,12 @@ In this folder, you will find examples on:
 - Design and Building of Robots and/or Androids with Raspberry Pi Boards 🤖🤳
 
 ## Learning Path
-Our journey begins with Python programming, a universal language to start bringing your ideas to life. We'll then explore the power of parallel and concurrent programming using processes and threads in Python. We'll compare the advantages of each approach to understand when to use them best.
+Our journey begins with Python programming, a universal language useful to give birth to your ideas.
+We'll then explore the power of parallel and concurrent programming using processes and threads in Python.
+We'll compare the advantages of each approach to understand when to use them best.
 
-Next, we'll dive into the world of graphic interfaces with Tkinter, opening doors to creating feature-rich apps. We'll move on to remote interfacing of Raspberry Pi boards and remote control UI, taking connectivity to a new level.
+The following step is to dive into the world of graphic interfaces with Tkinter, opening doors to creating feature-rich apps.
+We'll move on to remote interfacing of Raspberry Pi boards and remote control UI, taking connectivity to a new level.
 
 Finally, we'll bring your dreams of robotics and androids to life, using Raspberry Pi boards as the brains behind your science fiction projects.
 
