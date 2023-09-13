@@ -15,7 +15,10 @@
 # Welcome to the Third Year Computer Science Folder! 🌟
 
 ## Description
-In this folder, you will dive into the fascinating world of third-year computer science. You'll embark on an exciting learning journey, starting with Flowcharts and translating them into C language. We'll progress through fundamental concepts like variables, data types, input/output, arrays, and functions, and then tackle increasingly complex algorithms. Finally, we'll venture into the realm of those mysterious pointers.
+In this folder, you will dive yourself into the fascinating world of third-year computer science.
+You'll embark on an exciting learning journey, starting with Flowcharts and translating them into **C** language.
+We'll progress through fundamental concepts like variables, data types, input/output, arrays, and functions, and then tackle increasingly complex algorithms.
+Finally, we'll venture into the realm of those mysterious pointers.
 
 ## Organization
 All examples are organized by date, just like an epic computer science story unfolding behind each folder.
@@ -27,12 +30,12 @@ Here, you'll find examples on:
 - Variables and Data Types 🧮
 - Input/Output 🚀
 - Arrays and Functions 🧩
-- Magical Algorithms 🪄
+- Magical Algorithms 🔮
 - Vector Sorting 📈
 - The Enigma of Pointers 🧙‍♂️
 
 ## Learning Path
-Our journey begins with Flowcharts, teaching you how to plan your code effectively. We'll then move on to translating into C language to bring your algorithms to life. You'll learn to manipulate data with variables and types, communicate with the outside world through input/output, and organize complex data with arrays and functions.
+Our journey begins with Flowcharts, teaching you how to plan your code effectively. Then we'll move on to translating into **C** language so to bring your algorithms to life. You'll learn how to manipulate data with variables and types, communicate with the outside world through input/output, and organize complex data with arrays and functions.
 
 ## Wishes
 Conquer this fascinating world, computer science students! May every line of code be an adventure and every bug a challenge. Bon voyage into third-year computer science! 💻🚀🌌
@@ -63,7 +66,7 @@ Qui troverete esempi su:
 - Variabili e Tipi di Dati 🧮
 - Input/Output 🚀
 - Array e Funzioni 🧩
-- Algoritmi Magici 🪄
+- Algoritmi Magici 🔮
 - Ordinamento di Vettori 📈
 - L'Enigma dei Puntatori 🧙‍♂️
 
