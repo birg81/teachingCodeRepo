@@ -15,12 +15,12 @@
 # Welcome to the TPIST Folder! 🚀
 
 ## Description
-This is the place where you'll find all the amazing code examples related to our TPSIT course.
+This space is where you'll find all the amazing code examples related to our TPSIT course.
 In this folder, you'll embark on a journey into the world of computer science, learn to create stunning web pages, use CSS files, harness the power of Bootstrap, and add magic with JavaScript code.
 
 ## Organization
-Every example we've covered in class is neatly organized into folders, each labeled with the lesson date and, if needed, a descriptive name.
-This makes it easy to find exactly what you're looking for.
+Every example we've covered in class is neatly organized into folders, each labelled with the lesson date and, if needed, a descriptive name.
+The aim is to make it easy to find exactly what you're looking for.
 
 ## Contents
 Here, you'll find examples of:
@@ -30,7 +30,8 @@ Here, you'll find examples of:
 - JavaScript Wizardry ✨
 
 ## Wishes
-We hope this folder helps you in your learning journey and that you become more and more passionate about computer science. Keep exploring, experimenting, and having fun with code! 🤖👾
+We hope this folder helps you in your learning journey and that you become more and more passionate about computer science.
+Keep exploring, experimenting, and having fun coding! 🤖👾
 
 *Enjoy exploring and experimenting!* 😆
 
