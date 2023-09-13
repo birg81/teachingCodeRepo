@@ -16,20 +16,21 @@
 
 ## Explore the World of Code! 💻🌐
 
-👋 Hello everyone! Welcome to this extraordinary collection of code, born during our TPSIT (Technologies and Programming of Computer Systems) lessons in 5E.
+👋 Hello everyone!
+Welcome to this extraordinary collection of codes, born during our TPSIT (Technologies and Programming of Computer Systems) lessons in 5E.
 This repository is a true treasure trove of knowledge, carefully organized to help you learn and grow as developers.
 
 ## Easy and Intuitive Navigation 🗺️
 
 We've organized our code into sequentially numbered folders, each marked with the date of the lessons.
-You'll find each folder rich with code snippets and an explanation file that will guide you through every step.
+You'll find each folder rich with code snippets and a framework file that will guide you through each and every step.
 It's like a travel diary of the world of code!
 
 ## Learn, Experiment, Master! 🧠💡
 
 In each folder, you'll find a treasure trove of knowledge.
 We've covered exciting topics, from the basics of programming to database management, from computer security to artificial intelligence.
-Each lesson is a new chapter in your growth as a developer.
+Consider each lesson as a new chapter in your process of becoming developers.
 
 ## How to Use These Materials 📚🤔
 
@@ -50,13 +51,13 @@ From beginner to expert, each step brings you closer to mastery.
 
 This repository is a shared learning space.
 Share your discoveries, ask questions, collaborate with your classmates, and grow together as developers.
-The world of code is vast, and there's always something new to learn!
+The world of code is huge, and there's always something new to learn!
 
 ## The Key is Practice 🗝️🏆
 
-Remember, the key to becoming an expert programmer is constant practice.
-Every line of code written is a step forward.
-So, dive into the code, explore this repository, and enjoy the learning!
+Remember, the key to becoming an expert programmer is practice constantly.
+Every line of a written code is a step forward.
+So, dive into the code, explore this repository, and enjoy learning!
 
 Happy coding! 🚀👨‍💻👩‍💻
 
