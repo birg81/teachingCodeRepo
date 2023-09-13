@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcat-users
+	version="1.0"
+	xmlns="http://tomcat.apache.org/xml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
+>
+	<role rolename="admin"/>
+	<role rolename="admin-script"/>
+	<role rolename="admin-gui"/>
+	<role rolename="manager"/>
+	<role rolename="manager-status"/>
+	<role rolename="manager-script"/>
+	<role rolename="manager-jmx"/>
+	<role rolename="manager-gui"/>
+	<user username="admin" password="admin" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
+	<user username="root" password="root" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
+	<user username="user" password="1234" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
+	<user username="sa" password="sa" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
+</tomcat-users>
