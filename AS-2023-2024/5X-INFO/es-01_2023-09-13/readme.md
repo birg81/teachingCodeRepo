@@ -18,7 +18,7 @@ Today, we will guide you through an epic journey into the world of Apache Tomcat
 Ready?! 🤩
 
 ### Introduction
-In this example, we will see how to approach Java Enterprise, now called Jakarta EE, and use it to create a dynamic web project in which we can embed Java code within HTML code.
+In this example, we will see how to approach Java Enterprise, now called [Jakarta EE](https://it.wikipedia.org/wiki/Jakarta_EE), and use it to create a dynamic web project in which we can embed Java code within HTML code.
 Before we reach this final goal, we need to download a series of necessary resources.
 You may be able to skip some steps, but for completeness, all the steps are provided.
 
@@ -32,29 +32,9 @@ You may be able to skip some steps, but for completeness, all the steps are prov
 
 1. Download the latest version of **Tomcat 10.1** for Windows [here](https://tomcat.apache.org/download-10.cgi).
 2. Extract the ZIP file to a convenient location.
-3. Edit the `conf/tomcat-users.xml` file following our fantastic custom configuration. Alternatively, if you prefer, you can use this fantastic configuration. Open the file and paste the following code inside it:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<tomcat-users
-	version="1.0"
-	xmlns="http://tomcat.apache.org/xml"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
->
-	<role rolename="admin"/>
-	<role rolename="admin-script"/>
-	<role rolename="admin-gui"/>
-	<role rolename="manager"/>
-	<role rolename="manager-status"/>
-	<role rolename="manager-script"/>
-	<role rolename="manager-jmx"/>
-	<role rolename="manager-gui"/>
-	<user username="admin" password="admin" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="root" password="root" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="user" password="1234" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="sa" password="sa" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-</tomcat-users>
-```
+3. Edit the `conf/tomcat-users.xml` file following our fantastic custom configuration.
+Alternatively, if you prefer, you can use this fantastic configuration.
+Open the file and paste the following [this code](./tomcat-user.xml)
 
 ## Step 3: Setting up Eclipse Enterprise 🌌
 
@@ -65,7 +45,7 @@ You may be able to skip some steps, but for completeness, all the steps are prov
 ## Step 4: Creating a Dynamic Web Project 🌐
 
 1. Create a new Dynamic Web Project in Eclipse.
-2. The `web.xml` file is the heart of your project; make sure to take a close look at it.
+2. The [`web.xml`](./1stpage/src/main/webapp/WEB-INF/web.xml) file is the heart of your project; make sure to take a close look at it.
 
 ## Step 5: Structure of the Web Project 📂
 
@@ -86,37 +66,20 @@ Let's take a closer look at what it contains:
 
 - `/<projectName>/src/java`: It contains Java source code just like traditional Java projects.
 - `/<projectName>/src/main/webapp`: It contains HTML, JSP, CSS, and other static web files.
-- `/<projectName>/src/main/webapp/WEB-INF/web.xml`: It contains the web.xml file (a very important file) and other configurations.
+- `/<projectName>/src/main/webapp/WEB-INF/web.xml`: It contains the [`web.xml`](./1stpage/src/main/webapp/WEB-INF/web.xml) file (a very important file) and other configurations.
 
 ## Step 6: Starting the Project 🚀
 
 1. Start your project on the Tomcat server directly from Eclipse.
 2. Open your browser and go to `http://localhost:8080/<projectName>`.
+In this case [`http://localhost:8080/1stpage/`](http://localhost:8080/1stpage/)
 
 ## Step 7: Sample Code in index.jsp 📝
 After creating the project, it's a good practice to create a homepage.
 The advantage of JSP pages is that they allow you to mix Java code with HTML code.
 All code within angle brackets `<% /* Java code */ %>` is Java code.
 To print strings in HTML code, you should use `<%= "Sample String" %>`.
-Below is an example code:
-
-```jsp
-<%@page language="java" pageEncoding="utf-8" contentType="text/html; charset=utf-8"%>
-<!doctype html>
-<html lang="it">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=yes,initial-scale=1.0,maximum-scale=4.0,minimum-scale=0.5" />
-<link type="image/png" rel="icon" href="https://em-content.zobj.net/source/twitter/376/cat-face_1f431.png" />
-<title>Web Page</title>
-</head>
-<body>
-<% for(int i = 0; i < 10; i++) { %>
-<p>Forza Napoli! (<%= i %>)</p>
-<% } %>
-</body>
-</html>
-```
+Below is an example code of [`index.jsp`](./1stpage/src/main/webapp/index.jsp)
 
 But this is just the first of many examples.
 There is still a long way to go!
@@ -141,7 +104,7 @@ Oggi vi guideremo attraverso un viaggio epico nell'universo di Apache Tomcat e J
 Pronti?! 🤩
 
 ### Introduzione
-In questo esempio vedremo come approcciarci a Java Enterprise oggi chiamata Jakarta EE e grazie ad essa realizzare un progetto web dinamico attraverso il quale inserire codice Java all'interno di codice HTML.
+In questo esempio vedremo come approcciarci a Java Enterprise oggi chiamata [Jakarta EE](https://it.wikipedia.org/wiki/Jakarta_EE) e grazie ad essa realizzare un progetto web dinamico attraverso il quale inserire codice Java all'interno di codice HTML.
 Prima di arrivare a questo obbiettivo finale dobbiamo però scaricare una serie di risorse necessarie.
 Probabilmente alcuni passi potrai saltarli, ma per completezza sono forniti tutti gli step
 
@@ -155,29 +118,7 @@ Probabilmente alcuni passi potrai saltarli, ma per completezza sono forniti tutt
 
 1. Scarica l'ultima versione di **Tomcat 10.1** per Windows [qui](https://tomcat.apache.org/download-10.cgi).
 2. Estrai il file ZIP in una posizione comoda.
-3. Modifica il file `conf/tomcat-users.xml` seguendo la nostra fantastica configurazione personalizzata o se preferisci puoi adoperare questa fantastica configurazione, quindi apri il file e incolla al suo interno il seguente codice:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<tomcat-users
-	version="1.0"
-	xmlns="http://tomcat.apache.org/xml"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
->
-	<role rolename="admin"/>
-	<role rolename="admin-script"/>
-	<role rolename="admin-gui"/>
-	<role rolename="manager"/>
-	<role rolename="manager-status"/>
-	<role rolename="manager-script"/>
-	<role rolename="manager-jmx"/>
-	<role rolename="manager-gui"/>
-	<user username="admin" password="admin" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="root" password="root" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="user" password="1234" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="sa" password="sa" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-</tomcat-users>
-```
+3. Modifica il file [`conf/tomcat-users.xml`](./tomcat-users.xml) seguendo la nostra fantastica configurazione personalizzata o se preferisci puoi adoperare questa fantastica configurazione, quindi apri il file e incolla al suo interno il [seguente codice](./tomcat-users.xml)
 
 ## Passo 3: Preparazione di Eclipse Enterprise 🌌
 
@@ -188,7 +129,7 @@ Probabilmente alcuni passi potrai saltarli, ma per completezza sono forniti tutt
 ## Passo 4: Creazione di un Progetto Web Dinamico 🌐
 
 1. Crea un nuovo progetto Web Dinamico in Eclipse.
-2. Il file `web.xml` è il cuore del tuo progetto, assicurati di darvi un'occhiata approfondita.
+2. Il file [`web.xml`](./1stpage/src/main/webapp/WEB-INF/web.xml) è il cuore del tuo progetto, assicurati di darvi un'occhiata approfondita.
 
 ## Passo 5: Struttura del Progetto Web 📂
 
@@ -207,37 +148,20 @@ Ecco cosa troverai nella cartella del tuo progetto:
 Vediamo bene cosa contiene:
 - `/<projectName>/src/java`: Contiene il codice sorgente Java esattamente come i progetti Java tradizionali.
 - `/<projectName>/src/main/webapp`: Contiene HTML, JSP, CSS, e altri file web statici.
-- `/<projectName>/src/main/webapp/WEB-INF/web.xml`: Contiene il file `web.xml` (un file molto importante) e altre configurazioni.
+- `/<projectName>/src/main/webapp/WEB-INF/web.xml`: Contiene il file [`web.xml`](./1stpage/src/main/webapp/WEB-INF/web.xml) (un file molto importante) e altre configurazioni.
 
 ## Passo 6: Avvio del Progetto 🚀
 
 1. Avvia il tuo progetto sul server Tomcat direttamente da Eclipse.
 2. Apri il tuo browser e vai su `http://localhost:8080/<projectName>`.
+In questo caso [`http://localhost:8080/1stpage/`](http://localhost:8080/1stpage/)
 
 ## Passo 7: Codice di Esempio in index.jsp 📝
 Dopo la creazione del progetto è buona norma creare una home page.
 Il vantaggio della pagine jsp è che queste permettono di mischiare codice java al codice html.
 Tutto il codice nelle parentesi angolari `<% /* codice java */ %>` è codice java.
 Per stampare delle stringhe nel codice html va invece adoperato `<%= "Stringa di prova" %>`.
-Di seguito è proposto un codice di esempio
-
-```jsp
-<%@page language="java" pageEncoding="utf-8" contentType="text/html; charset=utf-8"%>
-<!doctype html>
-<html lang="it">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=yes,initial-scale=1.0,maximum-scale=4.0,minimum-scale=0.5" />
-<link type="image/png" rel="icon" href="https://em-content.zobj.net/source/twitter/376/cat-face_1f431.png" />
-<title>Web Page</title>
-</head>
-<body>
-<% for(int i = 0; i < 10; i++) { %>
-<p>Forza Napoli! (<%= i %>)</p>
-<% } %>
-</body>
-</html>
-```
+Di seguito è proposto un codice di esempio di [`index.jsp`](./1stpage/src/main/webapp/index.jsp)
 
 Ma questo è solo il primo di tantissimi esempi.
 Tanta è la strada ancora da percorrere!
