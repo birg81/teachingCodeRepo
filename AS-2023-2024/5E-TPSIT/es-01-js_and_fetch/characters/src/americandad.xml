@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<charactersList>
+	<character lastname="Smith" firstname="Stan" isMale="true"/>
+	<character lastname="Smith" firstname="Francine" isMale="false"/>
+	<character lastname="Smith" firstname="Hayley" isMale="false"/>
+	<character lastname="Smith" firstname="Steve" isMale="true"/>
+	<character lastname="Smith" firstname="Roger" isMale="true"/>
+	<character lastname="Smith" firstname="Klaus" isMale="true"/>
+	<character lastname="Smith" firstname="Avery" isMale="false"/>
+	<character lastname="Fischer" firstname="Jeff" isMale="true"/>
+	<character lastname="Bullock" firstname="Avery" isMale="true"/>
+	<character lastname="Schmueckle" firstname="Barry" isMale="true"/>
+	<character lastname="White" firstname="Snot" isMale="true"/>
+	<character lastname="Mancinelli" firstname="Toshi" isMale="true"/>
+	<character lastname="Yamamoto" firstname="Akiko" isMale="false"/>
+	<character lastname="Nguyen" firstname="Linda" isMale="false"/>
+	<character lastname="Memari" firstname="Francine" isMale="false"/>
+	<character lastname="Sanders" firstname="Principal Lewis" isMale="true"/>
+	<character lastname="Schlub" firstname="Terry" isMale="true"/>
+	<character lastname="Lewis" firstname="Greg" isMale="true"/>
+	<character lastname="Jackson" firstname="Dick" isMale="true"/>
+	<character lastname="Mandelbaum" firstname="Morty" isMale="true"/>
+	<character lastname="Patel" firstname="Svetlana" isMale="false"/>
+</charactersList>

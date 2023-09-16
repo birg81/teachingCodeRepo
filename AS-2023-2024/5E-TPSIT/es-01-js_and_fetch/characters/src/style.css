@@ -1,0 +1,6 @@
+* { font: bold 12pt 'Tahoma', serif; }
+select#choicheDataType > option {font: normal normal 10pt 'Tahoma', serif;}
+thead > tr > th, select#choicheDataType { background-color: #f7f568; }
+tr.female { background-color: #faebf1; color: #f274ab; }
+tr.male { background-color: #dde2ed; color: #2652ab; }
+table { border-collapse: collapse; }

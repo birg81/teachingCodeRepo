@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<charactersList>
+	<character>
+		<lastname>Fry</lastname>
+		<firstname>Philip J.</firstname>
+		<isMale>true</isMale>
+	</character>
+	<character>
+		<lastname>Leela</lastname>
+		<firstname>Turanga</firstname>
+		<isMale>false</isMale>
+	</character>
+	<character>
+		<lastname>Bender</lastname>
+		<firstname>Bending Rodriguez</firstname>
+		<isMale>true</isMale>
+	</character>
+	<character>
+		<lastname>Zoidberg</lastname>
+		<firstname>John A.</firstname>
+		<isMale>true</isMale>
+	</character>
+	<character>
+		<lastname>Hermes</lastname>
+		<firstname>Conrad</firstname>
+		<isMale>true</isMale>
+	</character>
+	<character>
+		<lastname>Amy</lastname>
+		<firstname>Wong</firstname>
+		<isMale>false</isMale>
+	</character>
+	<character>
+		<lastname>Professor</lastname>
+		<firstname>Hubert J.</firstname>
+		<isMale>true</isMale>
+	</character>
+	<character>
+		<lastname>Zapp</lastname>
+		<firstname>Brannigan</firstname>
+		<isMale>true</isMale>
+	</character>
+	<character>
+		<lastname>Kif</lastname>
+		<firstname>Kroker</firstname>
+		<isMale>true</isMale>
+	</character>
+	<character>
+		<lastname>Farnsworth</lastname>
+		<firstname>Cubert</firstname>
+		<isMale>true</isMale>
+	</character>
+</charactersList>

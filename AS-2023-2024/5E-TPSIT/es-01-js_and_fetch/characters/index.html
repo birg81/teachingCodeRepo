@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="https://em-content.zobj.net/source/htc/37/television_1f4fa.png"/>
+<link href="./src/style.css" rel="stylesheet" type="text/css">
+<title>Lista Personaggi dei Cartoni</title>
+<script src="./src/characters.js"></script>
+</head>
+<body>
+<table width="50%">
+	<thead>
+		<tr>
+			<th colspan="3">
+				<select id="choicheDataType" onchange="choiceDataType()" style="width: 100%">
+					<option />
+					<option value="json">json</option>
+					<option value="xml1">xml form 1</option>
+					<option value="xml2">xml form 2</option>
+				</select>
+			</th>
+		</tr>
+		<tr><th>Firstname</th><th>Lastname</th><th>⚥</th></tr>
+	</thead>
+	<tbody id="charactersTab"></tbody>
+</table>
+</body>
+</html>
