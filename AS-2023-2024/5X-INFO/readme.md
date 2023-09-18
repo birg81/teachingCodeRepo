@@ -12,47 +12,34 @@
 
 
 ![🇬🇧](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-united-kingdom_1f1ec-1f1e7.png) <a name="EN"></a>
-# Welcome to the Fifth-Year Computer Science Folder! 🌟🚀
+# Multiplication Table with to Apache Tomcat 🪶 and JSP Pages 🕸️
 
-## Description
-In this folder, we will immerse ourselves in the fascinating world of fifth-year computer science, exploring a wide range of advanced technologies and concepts.
-Get ready for an exciting learning journey!
+🌟 Welcome to this exciting adventure in the world of Apache Tomcat and JSP Pages! 🌟
 
-## Organization
-All examples are meticulously organized thought as the bricks of a solid building.
-You'll find everything you need as you explore advanced computer science.
+In this repository, you will find the files of a *Dynamic Web Project* that will introduce you to the wonders of the **Apache Tomcat** server and **JSP** (*JavaServer Page*) pages.
 
-## Contents
-In this folder, you will find examples on:
-- Java Enterprise Programming 🌐☕
-- Tomcat Web Server 🚀
-- JSP (JavaServer Pages) 📄
-- Servlet 🌐🚀
-- JDBC (Java Database Connectivity) 🗃️
-- R-DBMS (Relational Database Management Systems) 📊
-- Databases like MySQL, SQLite, H2DB 🗄️
-- ORM (Object-Relational Mapping) Approaches 🔄
-- Security and JWT (JSON Web Tokens) 🔐🔑
-- Creating Web APIs 🌐🚀
-- Maven Project Management Tool 🛠️
-- Spring Framework 🍃
-- Front-end Development in Svelte.js 🌟
+## What is Apache Tomcat? 🐱
 
-## Learning Path
-Our journey begins with Java Enterprise programming, opening doors to creating powerful and scalable web applications.
-We'll explore the world of Tomcat, JSP, Servlet, JDBC, and R-DBMS, learning to communicate with databases like MySQL, SQLite, and H2DB.
+[**Apache Tomcat**](https://en.wikipedia.org/wiki/Apache_Tomcat) is an open-source [web server](https://en.wikipedia.org/wiki/Web_server) and servlet container that allows you to run your Java web applications quickly and efficiently.
+*It's your reliable companion in the world of Java web development*!
 
-We'll proceed with ORM Approaches to simplify database interaction and ensure efficient data management.
-Security and JWT will be at the forefront of our concerns, securing your applications.
+## JSP Pages 🌐
 
-Following this, we'll create Web APIs using Spring, a powerful and flexible framework.
-You'll be ready to manage complex projects with Maven and develop an eye-catching front-end with Svelte.js.
+[**JSP**](https://en.wikipedia.org/wiki/JavaServer_Pages) pages are a powerful technology for creating dynamic web pages.
+With *JSP*, you can embed Java code directly into your HTML pages, making it easy to create interactive and dynamic web content.
 
-Finally, we'll put all these skills together to create a highly professional website aimed to be remarkable.
+## Folder Contents 📂
 
-## Wishes
-Have a fantastic journey into the exciting world of fifth-year computer science! May every line of code be a step toward creating innovative solutions.
-May your website not only be professional but also outstanding! 🌟🚀🌐💼
+In this folder, you will find the files of a **Dynamic Web Project** that will showcase the magic of JSP pages.
+
+- [**index.jsp**](./multiplicationTable/src/main/webapp/index.jsp): This is the main file of the project.
+Inside this file, you will find two nested `for loops` that create an *HTML table* to display the [multiplication table](https://it.wikipedia.org/wiki/Tavola_pitagorica).
+Each cell in the table represents the product of the initial row value and the initial column value.
+
+![multiplication table](https://it.emcelettronica.com/wp-content/uploads/2016/06/01-pitagoric.gif)
+
+🚀 *Now, you are ready to explore and experiment with **Apache Tomcat** and **JSP pages**!*
+***Enjoy the journey***! 🚀
 
 
 <hr/>
@@ -62,49 +49,35 @@ May your website not only be professional but also outstanding! 🌟🚀🌐💼
 <hr />
 
 
-![🇮🇹](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-italy_1f1ee-1f1f9.png) <a name="IT"></A>
-# Benvenuti nella Cartella Informatica del Quinto Anno! 🌟🚀
+![🇮🇹](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-italy_1f1ee-1f1f9.png) <a name="IT"></a>
+# Tavola delle Moltiplicazioni con Apache Tomcat 🪶 e le Pagine JSP 🕸️
 
-## Descrizione
-In questa cartella, ci immergeremo nell'affascinante mondo dell'informatica del quinto anno, esplorando una vasta gamma di tecnologie e concetti avanzati.
-Preparatevi per un percorso di apprendimento entusiasmante!
+🌟 Benvenuti in questa emozionante avventura nel mondo di Apache Tomcat e delle Pagine JSP! 🌟
 
-## Organizzazione
-Tutti gli esempi sono ordinati accuratamente, come i mattoni di un solido edificio.
-Troverete tutto il necessario mentre esplorate l'informatica avanzata.
+In questo repository troverete i file di un *Dynamic Web Project* che vi faranno scoprire le meraviglie del server **Apache Tomcat** e delle pagine **JSP** (*JavaServer Page*).
 
-## Contenuti
-In questa cartella, troverete esempi su:
-- Programmazione Java Enterprise 🌐☕
-- Web Server Tomcat 🚀
-- JSP (JavaServer Pages) 📄
-- Servlet 🌐🚀
-- JDBC (Java Database Connectivity) 🗃️
-- R-DBMS (Relational Database Management Systems) 📊
-- Database come MySQL, SQLite, H2DB 🗄️
-- Approcci ORM (Object-Relational Mapping) 🔄
-- Sicurezza e JWT (JSON Web Tokens) 🔐🔑
-- Creazione di Web API 🌐🚀
-- Strumento di Gestione di Progetto Maven 🛠️
-- Spring Framework 🍃
-- Sviluppo Front-end in Svelte.js 🌟
+## Che cos'è Apache Tomcat? 🐱
 
-## Percorso Didattico
-Il nostro viaggio inizia con la programmazione Java Enterprise, che vi aprirà le porte per la creazione di applicazioni web potenti e scalabili.
-Esploreremo il mondo di Tomcat, JSP, Servlet, JDBC e R-DBMS, imparando a comunicare con database come MySQL, SQLite e H2DB.
+[**Apache Tomcat**](https://it.wikipedia.org/wiki/Apache_Tomcat) è un [server web](https://it.wikipedia.org/wiki/Server_web) e un contenitore [servlet](https://it.wikipedia.org/wiki/Servlet) open source che vi permette di eseguire le vostre applicazioni web Java in modo veloce ed efficiente.
+*È il vostro compagno affidabile nel mondo dello sviluppo web Java*!
 
-Continueremo con gli Approcci ORM per semplificare l'interazione con i database e garantire una gestione dei dati efficiente.
-Sicurezza e JWT saranno al centro delle nostre preoccupazioni, proteggendo le vostre applicazioni.
+## Le Pagine JSP 🌐
 
-Successivamente, creeremo Web API utilizzando Spring, un framework potente e flessibile.
-Sarete pronti per gestire progetti complessi con Maven e sviluppare un frontend accattivante con Svelte.js.
+Le pagine [**JSP**](https://it.wikipedia.org/wiki/JavaServer_Pages) sono una potente tecnologia per la creazione di pagine web dinamiche.
+Con *JSP*, potete incorporare codice Java direttamente nelle vostre pagine HTML, rendendo facile la creazione di contenuti web interattivi e dinamici.
 
-Infine, metteremo insieme tutte queste competenze per creare un sito altamente professionale che lascerà il segno.
+## Contenuto della Cartella 📂
 
-## Auguri
-Buon viaggio nell'emozionante mondo dell'informatica del quinto anno!
-Che ogni riga di codice sia un passo verso la creazione di soluzioni innovative.
-Che il vostro sito sia non solo professionale ma anche straordinariamente impressionante! 🌟🚀🌐💼
+In questa cartella troverete i file di un **Dynamic Web Project** che vi mostreranno la magia delle pagine JSP.
+
+- [**index.jsp**](./multiplicationTable/src/main/webapp/index.jsp): Questo è il file principale del progetto.
+All'interno di questo file, troverete due `cicli for` annidati che creano una *tabella HTML* per visualizzare la [tabella delle moltiplicazioni](https://it.wikipedia.org/wiki/Tavola_pitagorica).
+Ogni cella della tabella rappresenta il prodotto tra il valore iniziale della riga e il valore iniziale della colonna.
+
+![multiplication table](https://it.emcelettronica.com/wp-content/uploads/2016/06/01-pitagoric.gif)
+
+🚀 *E ora, siete pronti per esplorare e sperimentare con **Apache Tomcat** e le **pagine JSP**!*
+***Buon divertimento***! 🚀
 
 
 <a href="#TOP">&utrif; top &utrif;</a>
