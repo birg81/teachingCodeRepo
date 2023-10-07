@@ -156,7 +156,7 @@ Buon divertimento **Coders** e alla prossima! 👋🏻
 
 #### ⚠️ **ricorda**:
 
-*Possa il tuo **codice** 🤖 essere sempre pulito e i tuoi **bug** 🐛 facili da stanere e risolvere*! 😎💻✨
+*Possa il tuo **codice** 🤖 essere sempre pulito e i tuoi **bug** 🐛 facili da stanare e risolvere*! 😎💻✨
 
 <a href="#TOP">&utrif; top &utrif;</a>
 
