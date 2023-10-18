@@ -15,7 +15,7 @@ s.connect((HOST, PORT))
 MSG = input('(write your message) >_ : ').strip()
 
 # Encode the message to UTF-8 and send it to the server.
-s.send(MSG.encode('utf-8')
+s.send(MSG.encode('utf-8'))
 
 # Print the host and port to which the message is sent, along with the message itself.
 print(f'{HOST}:{PORT} (send) >> "{MSG}"..')
