@@ -62,7 +62,7 @@ They are like travelers from distant lands.
 
 ## Ports and Their Value Ranges 🚪
 
-*Ports* are 16-bit integer numbers that identify a specific application on a computer, so the value of a port ranges from 0 to 65535 (i.e., $$2^{16}-1$$).
+*Ports* are 16-bit integer numbers that identify a specific application on a computer, so the value of a port ranges from 0 to 65535 (i.e., $2^{16}-1$).
 
 Ports are divided as follows:
 
@@ -117,7 +117,7 @@ Here's how to do it:
 
 2. **Create a socket object**: Create a socket object using
 ```python
-s =socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ```
 In this case, `s` represents the *client socket*.
 
@@ -199,7 +199,7 @@ Sono come viaggiatori provenienti da terre lontane.
 
 ## Porte e i Loro Intervalli di Valori 🚪
 
-Le *porte* (**ports**) sono numeri interi espressi su 16 bit che identificano un'applicazione specifica su un computer, quindi il valore di una porta è compreso tra 0 a 65535 (ovvero $$2^{16}-1$$).
+Le *porte* (**ports**) sono numeri interi espressi su 16 bit che identificano un'applicazione specifica su un computer, quindi il valore di una porta è compreso tra 0 a 65535 (ovvero $2^{16}-1$).
 
 Le porte sono così suddivise:
 
@@ -254,7 +254,7 @@ Ecco come farlo:
 1. **Importare il modulo socket**: Come prima cosa, importa il modulo `socket`.
 2. **Creare un oggetto socket**: Crea un oggetto socket utilizzando
 ```python
-s =socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ```
 In questo caso `s` rappresenta il *client socket*.
 
