@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Valore Radom</title>
+</head>
+<body>
+<div id="randomValue"></div>
+<script>
+// Funzione simulata che rappresenta un'operazione asincrona
+function eseguiOperazioneAsincrona() {
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			const randomValue = Math.random();
+			document.querySelector('#randomValue')
+				.innerHTML = randomValue;
+			if (randomValue > 0.5)
+				resolve(randomValue);	// Risoluzione con successo
+			else
+				reject(`valore troppo basso [${randomValue}]`);	// Reiezione con errore
+		}, 3000);	// Simuliamo un ritardo di 1 secondo
+	});
+}
+
+// Esempio di utilizzo della funzione asincrona
+eseguiOperazioneAsincrona()
+	.then(result => console.log(`Operazione completata con successo: ${result}`))
+	.catch(e => console.error(`Operazione non riuscita! ${e}`));
+</script>
+</body>
+</html>
