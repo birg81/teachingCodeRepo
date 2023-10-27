@@ -60,6 +60,24 @@ While `Rectangle`, `Square`, and `RegularShape` *implement* the `Shape` interfac
 Through *override*, the methods defined in the *interfaces* are implemented and redefined.
 This is the essence of *polymorphism*, where different objects are treated uniformly.
 
+#### Some Mathematics 🧮
+Here are some formulas used in calculations:
+* $\text{p} = N \cdot l$
+* $\text{A} = \frac{N \cdot l^2}{4 \cdot \tan\left(\frac{\pi}{N}\right)}$
+* $S_{\text{Tot}} = 2 \cdot A + p \cdot w$
+* $\text{V} = A \cdot w$
+
+where:
+- $N$ is the *number of sides* of the regular plane figure.
+- $l$ is the *length* of each side.
+- $\pi$ is the value of *pi* (approximately 3.1415926).
+- $p$ is the *perimeter* of the regular plane figure.
+- $A$ is the *area* of the regular plane figure (base area of the prism).
+- $\tan\left(\frac{\pi}{N}\right)$ is the tangent of the angle formed by the sides of the figure with the center of the figure.
+- $S_{\text{Tot}}$ is the *total surface area* of the regular solid figure (*prism* / *parallelepiped*).
+- $V$ is the *volume* of the regular solid figure.
+- $w$ is the *height* of the regular solid figure.
+
 ### Special Methods 💼
 
 #### Waterfall Constructors
@@ -134,6 +152,24 @@ Nel nostro codice, abbiamo creato due *interfacce*:
 * [`Shape3D`](./src/main/java/model/Shape3D.java), per le forme 3d, contiene invece le firme dei metodi:
   - `double totSurfaceArea()` per il calcolo della *superficie totale*.
   - `double volume()` per quello del *volume* del solido.
+
+### Un po' di matematica 🧮
+Ecco alcune formule usate nei calcoli:
+* $\text{p} = N \cdot l$
+* $\text{A} = \frac{N \cdot l^2}{4 \cdot \tan\left(\frac{\pi}{N}\right)}$
+* $S_{\text{Tot}} = 2 \cdot A + p \cdot w$
+* $\text{V} = A \cdot w$
+
+dove:
+- $N$ è il *numero di lati* della figura piana regolare.
+- $l$ è la *lunghezza* di ciascun lato.
+- $\pi$ è il valore di *pi greco* (circa 3.1415926).
+- $p$ è il *perimetro* della figura piana regolare
+- $A$ è l'*area* della figura piana regolare (area della base del prisma).
+- $\tan\left(\frac{\pi}{N}\right)$ rappresenta la tangente dell'angolo formato dai lati della figura con il centro della figura.
+- $S_{\text{Tot}}$ è l'area della *superfice totale* della figura solida regolare (*prisma* / *parallelepipedo*).
+- $V$ è il *volume* della figura solida regolare.
+- $w$ è l'*altezza* della figura solida regolare.
 
 ### Override e Polymorphism 🔄
 
