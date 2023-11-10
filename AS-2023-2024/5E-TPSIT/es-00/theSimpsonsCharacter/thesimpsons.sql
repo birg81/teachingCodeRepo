@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS CharactersList(
 	id	INT	PRIMARY KEY	AUTO_INCREMENT,
 	firstname	VARCHAR(32)	NOT NULL,
 	lastname	VARCHAR(32)	NOT NULL,
-	gender CHAR(1)	DEFUALT 'm' NOT NULL,
+	gender CHAR(1)	NOT NULL	DEFAULT 'm',
 	UNIQUE (firstname, lastname)
 );
 
