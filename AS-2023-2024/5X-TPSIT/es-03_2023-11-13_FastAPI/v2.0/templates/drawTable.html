@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" type="image/png" href="https://em-content.zobj.net/source/microsoft/379/soccer-ball_26bd.png" />
+<title>Tab {{cols}} × {{rows}}</title>
+</head>
+<body>
+🏠 <a href="./">comeback</a>
+<table>
+	{% for i in range(rows): %}
+	<tr>
+		{% for j in range(cols): %}
+		<td>⚽</td>
+		{% endfor %}
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
