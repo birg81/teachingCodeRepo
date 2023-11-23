@@ -26,21 +26,21 @@ Refer to the following [Class Diagram](./PetsListClassDiagram.png)
 
 <img src="./PetsListClassDiagram.png" height="275px" />
 
-### [`Animal`](./src/model/Animal.java):
+### [`Animal`](./src/main/java/model/Animal.java):
 
 - Base class representing an animal.
 - Each animal has a `name: String` and `dimension: int`.
 - The class should include a *constructor*, *getters/setters* methods, and a `toString()` method.
 - Additionally, the class should include a `toCSVfile()` method that returns a string for saving instance variables to a **csv** file.
 
-### [`LandPet`](./src/model/LandPet.java):
+### [`LandPet`](./src/main/java/model/LandPet.java):
 
 - Extends the `Animal` class.
 - Represents a terrestrial domestic pet (**e.g.**: *dog* 🐕, *cat* 🐈).
 - Adds a specific attribute, the sound it makes (`animalSound: String` 🙊🔊).
 - Should include a *constructor*, *getters/setters* methods, a `toString()` method, and override the `toCSVfile()` method specific to the class.
 
-### [`WaterPet`](./src/model/WaterPet.java):
+### [`WaterPet`](./src/main/java/model/WaterPet.java):
 
 - Extends the `Animal` class.
 - Represents an aquatic domestic pet (**e.g.**: *goldfish* 🐠 or marine animals 🦀 🦑 🦞).
@@ -49,7 +49,7 @@ Refer to the following [Class Diagram](./PetsListClassDiagram.png)
 
 ## CSVManager:
 
-- In the [main](./src/model/test/Main.java), code is needed to handle reading and writing the *CSV file*.
+- In the [`main` file](./src/main/java/test/Main.java) is needed to handle reading and writing the *CSV file*.
 - At program startup, check if a *CSV file* exists; if so, read animals from the file and add them to `ArrayList<Animal> pets`.
 - Use a `while` loop to allow the user to add more animals through CLI input as long as they desire.
 - Within the loop, ask the user to specify whether to add a terrestrial, aquatic, or a generic animal.
@@ -89,21 +89,21 @@ Fare riferimento al seguente [Class Diagram](./PetsLisClassDiagram.png)
 
 <img src="./PetsListClassDiagram.png" height="275px" />
 
-### [`Animal`](./src/model/Animal.java):
+### [`Animal`](./src/main/java/model/Animal.java):
 
 - Classe base rappresentante un animale.
 - Ogni animale ha un nome (`name: String`), e una dimensione (`dimension: int`)
 - La classe deve prevedere un *costruttore*, dei metodi *getters/setters* e un metodo `toString()`
 - La classe deve inoltre prevedere un metodo `toCSVfile()` che restituisce una stringa che verrà usata per il salvataggio nel file **csv** delle variabili di istanza.
 
-### [`LandPet`](./src/model/LandPet.java):
+### [`LandPet`](./src/main/java/model/LandPet.java):
 
 - Estende la classe `Animal`.
 - Rappresenta un animale domestico terrestre (**es**: *cane* 🐕, *gatto* 🐈).
 - Aggiungi come attributo specifico il verso (`animalSound: String` 🙊🔊).
 - Deve prevedere il *costruttore*, i *getters/setters*, il `toString()` e sovrascrivere il metodo `toCSVfile()` specifico per la classe.
 
-### [`WaterPet`](./src/model/WaterPet.java):
+### [`WaterPet`](./src/main/java/model/WaterPet.java):
 
 - Estende la classe `Animal`.
 - Rappresenta un animale domestico acquatico (**es**: *pesce rosso* 🐠 o *animali marini* 🦀 🦑 🦞).
@@ -112,7 +112,7 @@ Fare riferimento al seguente [Class Diagram](./PetsLisClassDiagram.png)
 
 ## CSVManager:
 
-- Nel [main](./src/model/test/Main.java) bisogna prevedere del codice per gestire la lettura e la scrittura del *file CSV*.
+- Nel [`main` file](./src/main/java/test/Main.java) bisogna prevedere del codice per gestire la lettura e la scrittura del *file CSV*.
 - All'avvio del programma, controllare se esiste un *file CSV*; in tal caso leggere gli animali dal file e aggiungili a `ArrayList<Animal> pets`.
 - Utilizza un ciclo `while` per permettere all'utente di poter ulteriormente aggiungere altri animali mediante input da CLI fintanto che lo desidera.
 - All'interno del ciclo, bisogna chiedere all'utente di specificare se vuole aggiungere un animale terrestre o acquatico o un generico animale.
