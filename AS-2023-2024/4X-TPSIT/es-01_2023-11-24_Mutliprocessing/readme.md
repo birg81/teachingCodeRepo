@@ -22,7 +22,7 @@ Welcome to the world of processes in Python! This is the place where the mysteri
 A process is like a star 🌟 in the sky of your operating system.
 Each star shines independently, carrying out its task without disturbing the others. In more technical terms, it's an isolated snapshot of a running program.
 
-## Python 🐍 and Processes: ✨ the **module** (`Library`) `multiprocessing` 🎩
+## Python 🐍 and Processes: ✨ the **module** (*Library*) `multiprocessing` 🎩
 
 Python has an ace up its sleeve called `multiprocessing`.
 This module turns your code into a magic act, allowing you to perform operations in parallel and fully harness the power of your computer.
