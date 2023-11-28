@@ -1,0 +1,1 @@
+ShoppingList v1.0 - uso di Sessioni

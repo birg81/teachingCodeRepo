@@ -1,0 +1,1 @@
+ShoppingList in più versioni
