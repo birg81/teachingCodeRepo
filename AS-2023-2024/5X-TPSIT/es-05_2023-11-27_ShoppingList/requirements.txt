@@ -1,4 +1,0 @@
-uvicorn
-fastapi
-httptools
-jinja2
