@@ -64,7 +64,8 @@ Get ready for a unique shopping adventure! Create, modify, and explore your shop
 ![Shopping Cart](https://em-content.zobj.net/thumbs/120/twitter/348/shopping-cart_1f6d2.png)
 
 Tempo di offerte e di saldi?
-Affrettati a fare i tuoi acquisti usado questa fantastica *WebApp*.
+Affrettati a fare i tuoi acquisti usando questa fantastica *WebApp*.
+
 Il suo nome?
 **Shopping List**, è una *WebApp* basata su **FastAPI** ⚡️!
 
