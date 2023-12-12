@@ -44,6 +44,7 @@ public class GetLastname extends HttpServlet {
 					)
 				);
 			rs.close();
+			con.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
