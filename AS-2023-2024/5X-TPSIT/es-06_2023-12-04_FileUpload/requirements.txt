@@ -1,0 +1,6 @@
+uvicorn
+httptools
+fastapi
+jinja2
+python-multipart
+aiofiles

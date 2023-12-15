@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FastAPI</title>
+</head>
+<body>
+<form method="post" action="/upload" enctype="multipart/form-data">
+	<input name="imgFile" id="imgUploading" type="file" />
+	<input type="submit" />
+	<input type="button" onclick="sendImg()" value="Upload" />
+</form>
+<script>
+const sendImg = async () => {
+	const response = await fetch(
+		'/upload', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'image/jpeg',
+			},
+			body: document.querySelector('#imgUploading').files[0],
+		}
+	);
+
+	if (response.ok) {
+		const result = await response.json();
+		alert(`File uploaded successfully. Server response: ${JSON.stringify(result)}`);
+	} else {
+		const error = await response.json();
+		alert(`Error uploading file. Server response: ${JSON.stringify(error)}`);
+	}
+};
+</script>
+</body>
+</html>
