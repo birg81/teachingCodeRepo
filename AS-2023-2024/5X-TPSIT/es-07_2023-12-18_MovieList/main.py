@@ -54,7 +54,21 @@ ORDER BY
 	rs = cur.fetchall()
 	cur.close()
 	con.close()
+	# The following lines of code can be replaced with a single line!
+ 	myJson = []
+	for row in rs:
+		myJson.append({
+			"film_id": int(row[0]),
+			"title": row[1].lower(),
+			"description": row[2].lower(),
+			"length": int(row[3])
+		})
+	return myJson
+	'''
+	# This line is much shorter but also much more difficult to understand
+	# If you grasp this line of code, then you are an excellent programmer!
 	return [ {k: v for k, v in zip(FIELDS,row)} for row in rs ]
+	'''
 
 if __name__ == '__main__':
 	uvicorn.run(
