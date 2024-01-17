@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Math Calculator</title>
+</head>
+<body>
+<input type="number" id="n1" oninput="mathFix()" />
+<select id="op" onchange="mathFix()">
+	<option/>
+	<option value="ADD">+</option>
+	<option value="SUB">&minus;</option>
+	<option value="MUL">&times;</option>
+	<option value="DIV">&divide;</option>
+</select>
+<input type="number" id="n2" oninput="mathFix()" />
+<label>=</label>
+<script>
+'use strict';
+function mathFix() {
+	const
+		n1 = document.querySelector('#n1').value.trim() !== ''
+			? parseFloat(document.querySelector('#n1').value)
+			: 0.,
+		n2 = document.querySelector('#n2').value.trim() !== ''
+			? parseFloat(document.querySelector('#n2').value)
+			: 0.,
+		res = document.querySelector('#n2+label'),
+		op = document.querySelector('#op').value;
+	if(op === 'ADD') {
+		res.innerHTML = `= ${n1 + n2}`;
+	} else if(op === 'SUB') {
+		res.innerHTML = `= ${n1 - n2}`;
+	} else if(op === 'MUL') {
+		res.innerHTML = `= ${n1 * n2}`;
+	} else if(op === 'DIV' && n2 !== 0) {
+		res.innerHTML = `= ${n1 / n2}`;
+	} else {
+		res.innerHTML = 'Error!!'
+	}
+}
+</script>
+</body>
+</html>

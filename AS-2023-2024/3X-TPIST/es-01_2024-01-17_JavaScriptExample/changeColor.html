@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>document</title>
+<script>
+'use strict';
+function changeColor() {
+	const r = parseInt(document.querySelector('#r').value);
+	const g = parseInt(document.querySelector('#g').value);
+	const b = parseInt(document.querySelector('#b').value);
+	const color = `#${(0xffffff & (r << 16 | g << 8 | b)).toString(16).padStart(6, 0)}`;
+	document.title = color;
+	document.body.style.backgroundColor = color;
+	document.querySelector('#r+label').innerHTML = r;
+	document.querySelector('#g+label').innerHTML = g;
+	document.querySelector('#b+label').innerHTML = b;
+	document.querySelector('h5').innerHTML = color;
+}
+</script>
+</head>
+<body onload="changeColor()">
+<h5></h5>
+<input type="range" id="r" oninput="changeColor()" value="255" min="0" max="255" step="1" /><label for="r"></label><br/>
+<input type="range" id="g" oninput="changeColor()" value="255" min="0" max="255" step="1" /><label for="g"></label><br/>
+<input type="range" id="b" oninput="changeColor()" value="255" min="0" max="255" step="1" /><label for="b"></label><br/>
+</body>
+</html>

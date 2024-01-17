@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Days left until Xmas</title>
+</head>
+<body>
+<div></div>
+<script>
+'use strict';
+const today = new Date();
+const xmas = new Date(today.getFullYear(), 11, 25, 0, 0, 1);
+document.querySelector('div').innerHTML = `🎅🏼 ${parseInt((xmas.getTime() - today.getTime()) / (24 * 60 * 60 * 1000))}`;
+</script>
+</body>
+</html>

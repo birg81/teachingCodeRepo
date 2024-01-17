@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Minecraft Effect</title>
+<style>
+TD	{ height: 10px; width: 10px; margin: 0px; padding: 0px; overflow: hidden; }
+TABLE	{ border-collapse: collapse; }
+</style>
+</head>
+<body onload="drawTab()">
+<input type="range" id="rows" value="1" min="1" max="85" step="1" oninput="drawTab()" /><label for="rows"></label><br/>
+<input type="range" id="cols" value="1" min="1" max="85" step="1" oninput="drawTab()" /><label for="cols"></label><br/>
+<input type="range" id="hue" value="210" min="0" max="360" step="1" oninput="drawTab()" /><label for="hue"></label><br/>
+<table></table>
+<script>
+'use strict';
+function drawTab() {
+	const
+		rows = parseInt(document.querySelector('#rows').value),
+		cols = parseInt(document.querySelector('#cols').value),
+		hue = parseInt(document.querySelector('#hue').value);
+	let tabStr = '';
+	for(let i = 0; i < rows * cols; i++)
+		tabStr += `
+			${ i % cols === 0 ? '<tr>' : ''}
+			<td style="background:hsl(${hue}, 75%, ${88 * (i % cols)/cols + Math.random() * 15}%)"></td>
+			${ i % cols === cols -1 ? '</tr>' : ''}
+		`;
+	document.querySelector('#rows+label').innerHTML = `<b>row:</b> ${rows}`;
+	document.querySelector('#cols+label').innerHTML = `<b>col:</b> ${cols}`;
+	document.querySelector('#hue+label').innerHTML = `<b>hue:</b> ${hue}&deg;`;
+	document.querySelector('table').innerHTML = tabStr;
+}
+</script>
+</body>
+</html>

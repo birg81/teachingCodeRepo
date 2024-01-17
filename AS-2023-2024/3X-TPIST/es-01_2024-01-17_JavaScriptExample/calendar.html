@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Calendario</title>
+<style>
+TABLE#calendario {
+	border-collapse: collapse;
+	font: 11pt 'Arial';
+	box-shadow: 10px 10px 5px #888888;
+	box-sizing: content-box;
+	/* border-radius: 10px 10px 10px 10px; */
+	border: 5px solid #006393;
+}
+TABLE#calendario TH {
+	background-color: #006393;
+	color: #fff;
+}
+TABLE#calendario, TABLE#calendario TR:nth-child(even) TD:nth-child(odd), TABLE#calendario TR:nth-child(odd) TD:nth-child(even) {
+	background-color: #c0e2fe;
+}
+TABLE#calendario TR:nth-child(even) TD:nth-child(even), TABLE#calendario TR:nth-child(odd) TD:nth-child(odd) {
+	background-color: #95ddff;
+}
+TABLE#calendario TR:nth-child(odd) TD:nth-child(7n) {
+	background-color: #707efd;
+	color: #fff;
+}
+TABLE#calendario TR:nth-child(even) TD:nth-child(7n) {
+	background-color: #8186ff;
+	color: #fff;
+}
+TABLE#calendario TD#today {
+	background-color: #0101cc;
+	font-weight: bold;
+	color: #fff;
+	/* border: 2px solid black; */
+	border-radius: 20px 20px 20px 20px;
+}
+</style>
+</head>
+<body>
+<table id="calendario">
+<thead></thead>
+<tbody></tbody>
+</table>
+<script>
+'use strict';
+const
+	months = ['gen', 'feb', 'mar', 'apr', 'mag', 'giu', 'lug', 'ago', 'set', 'ott', 'nov', 'dic'],
+	wDays = ['lu', 'ma', 'me', 'gi', 've', 'sa', 'do'],
+	today = new Date(),
+	myDay = today.getDate(), myMonth = today.getMonth(), myYear = today.getFullYear(),
+	dayOfWeek = ((new Date(myYear, myMonth, 1)).getDay() + 6) % 7,
+	daysInMonth = (new Date(myYear + (myMonth == 11 ? 1 : 0), myMonth + 1, 0)).getDate();
+document.querySelector('#calendario>thead').innerHTML =`
+	<tr><th colspan="7">${myDay} &minus; ${months[myMonth]} &minus; ${myYear}</th></tr>
+	<tr><th>${wDays.join('</th><th>')}</th></tr>
+`;
+let calStr = '';
+for(let i = 0; i < 6 * 7; i++)
+	calStr += `
+		${i % 7 === 0 ? '<tr>' : ''}
+		<td${i === myDay + dayOfWeek -1 ? ' id="today"' : ''}>
+		${i > daysInMonth + dayOfWeek -1 || i < dayOfWeek ? '' : i + 1 - dayOfWeek}
+		</td>
+		${i % 7 === 6 ? '</tr>' : ''}
+	`;
+document.querySelector('#calendario>tbody').innerHTML = calStr;
+</script>
+</body>
+</html>
