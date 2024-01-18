@@ -12,7 +12,7 @@
 
 
 ![🇬🇧](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-united-kingdom_1f1ec-1f1e7.png) <a name="EN"></a>
-# Multiplication Table with to Apache Tomcat 🪶 and JSP Pages 🕸️
+# Multiplication Table with to Apache Tomcat 😺 and JSP Pages 🕸️
 
 🌟 Welcome to this exciting adventure in the world of Apache Tomcat and JSP Pages! 🌟
 
@@ -50,7 +50,7 @@ Each cell in the table represents the product of the initial row value and the i
 
 
 ![🇮🇹](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-italy_1f1ee-1f1f9.png) <a name="IT"></a>
-# Tavola delle Moltiplicazioni con Apache Tomcat 🪶 e le Pagine JSP 🕸️
+# Tavola delle Moltiplicazioni con Apache Tomcat 😺 e le Pagine JSP 🕸️
 
 🌟 Benvenuti in questa emozionante avventura nel mondo di Apache Tomcat e delle Pagine JSP! 🌟
 
