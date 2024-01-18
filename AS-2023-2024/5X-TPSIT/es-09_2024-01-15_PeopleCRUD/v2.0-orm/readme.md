@@ -1,0 +1,1 @@
+WIP versione che fa uso di ORM attraverso sqlAlchemy
