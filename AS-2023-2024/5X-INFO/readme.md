@@ -64,7 +64,7 @@ This way, you'll have created specific folders within your user folder:
 
 ## Configure Your IDE 🛠️
 
-Open Visual Studio Code, press `CTRL + SHIFT + P`, type `User Settings (JSON)`, and paste the following configuration into the [settings.json](/es-01_2023-09-13/settings.json) file, allowing your IDE to give you the best experience.
+Open Visual Studio Code, press `CTRL + SHIFT + P`, type `User Settings (JSON)`, and paste the following configuration into the [settings.json](./es-01_2023-09-13/settings.json) file, allowing your IDE to give you the best experience.
 
 ## Essential Extensions 🧩
 
@@ -199,7 +199,7 @@ In questo modo, avrai creato dentro la cartella del tuo utente una serie di cart
 
 ## Configura il Tuo IDE 🛠️
 
-Apri Visual Studio Code, premi `CTRL + MAIUSC + P`, scrivi `User Settings (JSON)` e incolla nel file [settings.json](/es-01_2023-09-13/settings.json) la seguente configurazione grazie alla quale il tuo IDE ti permetterà di ottenere il massimo.
+Apri Visual Studio Code, premi `CTRL + MAIUSC + P`, scrivi `User Settings (JSON)` e incolla nel file [settings.json](./es-01_2023-09-13/settings.json) la seguente configurazione grazie alla quale il tuo IDE ti permetterà di ottenere il massimo.
 
 ## Estensioni Essenziali 🧩
 
