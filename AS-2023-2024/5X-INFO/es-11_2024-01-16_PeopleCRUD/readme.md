@@ -120,7 +120,7 @@ Questo repository è un'avventura entusiasmante nell'universo della creazione di
 
 ## 🌟 Funzionalità del Repository
 
-Questo codice permette la gestione di una lista di persone rappresentate dalla classe `class **Person**(*id*, *firstname*, *lastname*, *age*)` 👤 in **Java** ☕ usando diversi approcci che di seguito verranno illustrati.
+Questo codice permette la gestione di una lista di persone rappresentate dalla classe `class Person(id, firstname, lastname, age)` 👤 in **Java** ☕ usando diversi approcci che di seguito verranno illustrati.
 
 #### Una stessa macchima 🚗 ma con diversi motori
 
