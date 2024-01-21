@@ -35,7 +35,7 @@ Every approach follows a different path, yet each approach responds to a specifi
 
 👀 Interestingly, this approach allowed decoupling the *frontend* from the *backend*, so the *frontend* 🎭 practically remained unchanged for all versions, while the main changes focused on the *backend*!
 
-![Web UI](./wui.png)
+![Web UI](./WUI.png)
 
 Therefore, regardless of the technology used, a charming *web graphical interface* (called **Web UI** or **WUI**) developed with HTML, CSS, and JavaScript will welcome the user, displaying people in a tabular form and allowing various **CRUD operations** with great style and elegance 🎨, thanks to the magic of [Bootstrap](https://getbootstrap.com/) making the **WUI** more appealing 🖌️.
 
