@@ -12,131 +12,85 @@
 
 
 ![🇬🇧](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-united-kingdom_1f1ec-1f1e7.png) <a name="EN"></a>
-# Web Application with Jakarta EE, Tomcat 😺, and Maven 🚀
+# Person CRUD Management in Java 🚀✨
 
-Welcome to this exciting web development adventure with [Jakarta Enterprise Edition (EE)](https://en.wikipedia.org/wiki/Jakarta_EE), [Tomcat](https://en.wikipedia.org/wiki/Apache_Tomcat), [Maven](https://en.wikipedia.org/wiki/Apache_Maven), and more! 🌐 In this space, we'll guide you through creating a powerful web app using various modern and flexible IDEs that will make your development process a unique experience.
+## Mission 🌐
 
-## What Will You Find Here? 🧐
+This repository is an exciting adventure in the world of creating RESTful services in Java, exploring the potential of **Java** ☕, [**Tomcat**](https://tomcat.apache.org/) 😺, [**SpringBoot**](https://start.spring.io) 🍃, DBMS 🛢️, and much more!
 
-Discover fascinating features, including:
+## 🌟 Repository Features
 
-* Detailed information on *URL Query Strings* 📊
-* Implementation of complete CRUD operations
-* REST services with endpoints and web API development 🔄
-* Creation of a WebApp and CRUD operations on different entities 💡
-* Development of both *back end* and *front end* with or without the use of frameworks ⚙️
-* Building modern and responsive Web UIs with CSS Frameworks like [Bootstrap](https://getbootstrap.com) 🎨
+This code allows the management of a list of people represented by the class `class **Person**(*id*, *firstname*, *lastname*, *age*)` 👤 in **Java** ☕ using different approaches that will be illustrated below.
 
-## Back-End with Jakarta EE and Maven
+### A Single Car 🚗 with Different Engines
 
-We'll start by exploring the use of servlets to intelligently respond to requests:
+Imagine these approaches are like a car 🚗, and we can change the engine to use a different one, such as *gasoline* ⛽, *diesel* 🦕, *electric* ⚡, and even *hydrogen* 💧.
+The body remains the same, but we can choose the engine that best suits our needs.
 
-* Creating a servlet that provides JSON information about URL query strings 🎯
-* Implementing a servlet to simulate a complete CRUD 🔄
-* Skillfully solving data extraction issues from requests using the powerful Java Stream API 🌊
+Each engine has a unique operation and different size, but there's a trick: each engine fits perfectly, like pieces of a puzzle. 🧩✨
 
-Our destination is the implementation of modern technologies like [Spring Boot](https://spring.io/projects/spring-boot) for a complete CRUD in a production environment.
+Every approach follows a different path, yet each approach responds to a specific *route*, a particular **endpoint**, `/api/person`.
 
-## Initial Setup
+### 🎨 Captivating User Interface
 
-Before anything else, make sure to download the right IDE for you. We recommend:
-* [Eclipse](https://www.eclipse.org/)
-* [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [VS Codium](https://github.com/VSCodium/vscodium/releases).
+👀 Interestingly, this approach allowed decoupling the *frontend* from the *backend*, so the *frontend* 🎭 practically remained unchanged for all versions, while the main changes focused on the *backend*!
 
-However, we'll focus on the last two.
+Therefore, regardless of the technology used, a charming *web graphical interface* (called **Web UI** or **WUI**) developed with HTML, CSS, and JavaScript will welcome the user, displaying people in a tabular form and allowing various **CRUD operations** with great style and elegance 🎨, thanks to the magic of [Bootstrap](https://getbootstrap.com/) making the **WUI** more appealing 🖌️.
 
-We'll guide you step by step in configuring the IDE, installing necessary plugins, and downloading essential complementary software for fabulous development.
+## 🌐 REST Architecture: CRUD Services and DBMS Operations
 
-To simplify things, we suggest creating a dedicated folder for your Java projects and another for complementary software.
+The **REST** architecture *(**Re**presentational **S**tate **T**ransfer)* is an architecture for designing distributed systems as web services.
+This approach emphasizes resource representation and stateless interaction between the client and server.
 
-Try running this command from the terminal:
+**REST** uses standard HTTP methods to perform operations **CRUD** *(**C**reate **R**ead **U**pdate **D**elete)* usually on resources stored in databases 🛢️.
 
-```bash
-md %USERPROFILE%\vs-workspace\java-workspace\.__apache__
-```
+**What HTTP methods does ReST use, and what CRUD operations do they correspond to?**
 
-This way, you'll have created specific folders within your user folder:
-* `vs-workspace`: your personal folder for all projects, in any language
-* `java-workspace`: the folder for Java projects
-* `.__apache__`: will contain complementary software like [Tomcat](http://tomcat.apache.org/) and [Maven](https://maven.apache.org/download.cgi).
+* ➕ **POST** 🌱: to *create* a resource; corresponds to **C**reate **CRUD**, equivalent to an `INSERT` **SQL** operation 🛢️.
+* 🔍 **GET** 📖: to *retrieve/read* a resource; corresponds to **R**ead **CRUD**, similar to a `SELECT` **SQL** operation 🛢️.
+* 🔄 **PUT** ♻️: to *update* a resource; corresponds to **U**pdate **CRUD**, similar to an `UPDATE` **SQL** operation 🛢️.
+* ❌ **DELETE** 🗑️: to *delete* a resource; corresponds to **D**elete **CRUD**, equivalent to a `DELETE` **SQL** operation 🛢️.
 
-## Configure Your IDE 🛠️
+These HTTP methods correspond to the operations **CRUD**, playing a crucial role in our example, allowing users to interact with our API fully and securely. 🔗
 
-Open Visual Studio Code, press `CTRL + SHIFT + P`, type `User Settings (JSON)`, and paste the following configuration into the [settings.json](./es-01_2023-09-13/settings.json) file, allowing your IDE to give you the best experience.
+### 😺 [ver 0.9](./v0.9-ALPHA_tomcat_complete_crud): Servlet and Tomcat 😺
 
-## Essential Extensions 🧩
+In the first version, we leverage **servlets** to handle HTTP requests.
+Servlets respond along the `/api/person` route by returning JSON and HTTP status messages to inform the user.
 
-Add the following extensions:
+The servlet [`PersonRouter.java`](v0.9-ALPHA_tomcat_complete_crud/src/main/java/routers/PersonRouter.java) is nothing more than a special class that extends `**HttpServlet**` and overrides the following methods:
 
-* [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven)
-* [Community Server Connector](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-community-server-connector)
+* 🔍 **doGet(…)** for 👁️ *viewing people*; if an `id` is sent, it shows a specific 👤 person from the list; otherwise, it displays the complete list of people 👥 in *JSON format*.
+* 🌱 **doPost(…)** for ➕ *adding a person*; an HTTP message will inform whether the insertion was successful or not in the manager.
+* **doPut(…)** for ✏️ *modifying a person* by updating different fields; an HTTP message will inform whether the operation was successful or not.
+* **doDelete(…)** for ❌ *deleting a person* from the list; an HTTP message will inform whether the operation was successful or not.
 
-## Download Complementary Software 📥
+This approach leaves a significant burden on the programmer, who must write a lot of code to handle different events.
+In this approach, no persistence has been implemented, so no DBMS 🛢️ is used.
+A simple `ArrayList<Person> **people**` is used, so changes will be lost every time the application is restarted.
 
-Next, download:
+### 🚀 [ver 1.0](./v1.0-spring_arraylist/): SpringBoot 🍃
 
-* The **binary zip archive** of [Maven](https://maven.apache.org/download.cgi) and extract it into the `.__apache__` folder.
-* The latest **64-bit .zip version** of [Tomcat](http://tomcat.apache.org/), extract it into the same folder.
-* Configure the extensions by indicating the paths to the Maven and Tomcat folders.
-* Rewrite the [apache-tomcat-*version*\conf\tomcat-users.xml](./es-01_2023-09-13/tomcat-users.xml) file.
+With the transition to **SpringBoot** 🍃, our code becomes much leaner. **SpringBoot** 🍃 simplifies configuration and provides a more structured environment for creating **Java** ☕ applications.
+Here, we continue to implement [**CRUD**](./v1.0-spring_arraylist/src/main/java/pkg/router/PersonRouter.java) operations, but with greater efficiency thanks to the features of **SpringBoot** 🍃 that handle many low-level details.
+You will notice a significant reduction in the necessary code compared to the implementation with servlets alone. 🌱
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<tomcat-users
-	version="1.0"
-	xmlns="http://tomcat.apache.org/xml"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
->
-	<role rolename="admin"/>
-	<role rolename="admin-script"/>
-	<role rolename="admin-gui"/>
-	<role rolename="manager"/>
-	<role rolename="manager-status"/>
-	<role rolename="manager-script"/>
-	<role rolename="manager-jmx"/>
-	<role rolename="manager-gui"/>
-	<user username="admin" password="admin" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="root" password="root" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="user" password="1234" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="sa" password="sa" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-</tomcat-users>
-```
+### 🌐 [ver 2.0](./v2.0-spring_jpa/): Persistence with H2DB 🛢️
 
-## Project Creation 🚀
+The final version adds *data persistence* using [**H2DB**](https://www.h2database.com/) as a database.
+Here, we introduce the concept of *Object-Relational Mapping* (**ORM**) through **JPA** (*Java Persistence API*) and [**Hibernate**](https://hibernate.org).
+Now, working with data in SQL will be as simple as working with an [`ArrayList`](./v2.0-spring_jpa/src/main/java/pkg/router/PersonRouter.java) in **Java** ☕, and changes persist even after restarts thanks to database persistence.
+**SpringBoot** 🍃, along with **JPA** and **Hibernate**, significantly simplifies interaction with the database. 🗃️
 
-Open Visual Studio Code, press `CTRL + SHIFT + P`, type **Maven: Create Maven Project**, select `maven-archetype-webapp` as the archetype, and follow the instructions to provide the necessary information.
+## 🤝 Lessons Learned
 
-## Configure the Project 🛠️
+This experiment has taught us to **decouple the frontend from the backend**, understand the importance of data persistence, and evolve toward a data-oriented architecture.
+The use of DBMS is crucial, and the flexibility of JPA easily allows changing DBMS in the future. 🚀
 
-After downloading all dependencies, modify the `pom.xml` file by replacing the Java version with the latest one using this snippet:
+## 🚀 Contribute and Have Fun!
 
-```xml
-<maven.compiler.source>21</maven.compiler.source>
-<maven.compiler.target>21</maven.compiler.target>
-```
+Contribute, explore, learn, and enjoy the process of creating *RESTful* services in Java. 🤓✨
 
-Also, insert the [**Tomcat Catalina**](https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina) dependency in the `<dependencies>` section:
-
-```xml
-<dependency>
-	<groupId>org.apache.tomcat</groupId>
-	<artifactId>tomcat-servlet-api</artifactId>
-	<version>10.1.18</version>
-</dependency>
-```
-
-Ensure you configure your project correctly to leverage Jakarta EE and Maven to the fullest.
-
-## Testing and Deploy 🚧
-
-To test the application, create the WAR package and start the Tomcat server. Deploy the WAR file on the server and test your application at [localhost:8080/<artifactId>](http://localhost:8080/). Remember, any code changes require creating a new WAR file for updating on Tomcat.
-
-## Agility Note 🏎️
-
-Although this approach may seem less immediate than Eclipse, once accustomed, the advantages are significant and guaranteed by the enormous versatility of Maven. *Be agile, be creative, and enjoy developing your web app*! 🚀✨
 
 <hr/>
 
@@ -146,135 +100,82 @@ Although this approach may seem less immediate than Eclipse, once accustomed, th
 
 
 ![🇮🇹](https://em-content.zobj.net/thumbs/60/whatsapp/352/flag-italy_1f1ee-1f1f9.png) <a name="IT"></a>
-# Applicazione Web con Jakarta EE, Tomcat 😺 e Maven 🚀
+# Person CRUD Management in Java 🚀✨
 
-Benvenuto in questa emozionante avventura di sviluppo web con [Jakarta Enterprise Edition (EE)](https://it.wikipedia.org/wiki/Jakarta_EE), [Tomcat](https://it.wikipedia.org/wiki/Apache_Tomcat), [Maven](https://it.wikipedia.org/wiki/Apache_Maven) e non solo! 🌐
-In questo spazio, ti guideremo attraverso la creazione di una potente web app usando diversi IDE moderni e flessibili che renderanno il tuo processo di sviluppo un'esperienza unica.
+## Mission 🌐
 
-## Cosa Troverai Qui? 🧐
+Questo repository è un'avventura entusiasmante nell'universo della creazione di servizi RESTful in Java, esplorando le potenzialità di **Java** ☕, [**Tomcat**](https://tomcat.apache.org/) 😺, [**SpringBoot**](https://start.spring.io) 🍃, DBMS 🛢️ e molto altro!
 
-Scoprirai funzionalità affascinanti, tra cui:
+## 🌟 Funzionalità del Repository
 
-* Informazioni dettagliate sulle *URL Query String* 📊
-* Implementazione di oprazioni CRUD complete
-* servizi REST con endpoint e sviluppo di webapi 🔄
-* Creazione di una WebApp e operazioni CRUD su diverse entità 💡
-* Sviluppo di un *back end* e di un *front end* con e senza utilizzo di framework ⚙️
-* Creazione di Web UI moderne e responsive grazie a CSS Framework come [Bootstrap](https://getbootstrap.com) 🎨
+Questo codice permette la gestione di una lista di persone rappresentate dalla classe `class **Person**(*id*, *firstname*, *lastname*, *age*)` 👤 in **Java** ☕ usando diversi approcci che di seguito verranno illustrati.
 
-## Back-End con Jakarta EE e Maven
+#### Una stessa macchima 🚗 ma con diversi motori
 
-Partiremo esplorando l'uso di servlet per rispondere alle richieste in modo intelligente:
+Immagina che questi approcci siano come una macchina 🚗, la quale possiamo cambiare il motore in modo da usarne uno diverso, come *benzina* ⛽, *diesel* 🦕, *elettrico* ⚡, e persino ad *idrogeno* 💧.
 
-* Creeremo una servlet che fornirà informazioni in formato JSON sulle query string delle URL 🎯
-* Implementeremo una servlet per simulare un completo CRUD 🔄
-* Risolveremo abilmente problemi di estrazione dei dati dalle richieste utilizzando la potente Stream API di Java 🌊
+La carrozzeria rimane invariata, ma possiamo scegliere il motore che meglio si adatta alle nostre esigenze.
+Ogni motore ha un funzionamento unico e una diversa grandezza ma si incastra perfettamente, come ai diversi incastri. 🧩✨
 
-La nostra destinazione l'implementazione di tecnologie moderne come [Spring Boot](https://spring.io/projects/spring-boot) per un CRUD completo in un ambiente di produzione.
+Ogni approccio persegue una strada diversa, ciononostate ogni approccio risponde su un determinata *rotta*, uno specifico **endpoint**, ovvero `/api/person`.
 
-## Configurazione Iniziale
+### 🎨 Interfaccia Utente Affascinante
 
-Prima di tutto, assicurati di scaricare l'IDE giusto per te, noi ti proponiamo:
-* [Eclipse](https://www.eclipse.org/)
-* [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [VS Codium](https://github.com/VSCodium/vscodium/releases).
+👀 È interessante notare che questo approccio ha permesso di scorrelare il *frontend* dal *backend*, di conseguenza la parte di *frontend* 🎭 è rimasta praticamente invariata uguale per tutte le versioni, mentre le uniche modifiche principali si sono concentrate nel *backend*!
 
-Ci soffermeremo però sull'uso di questi ultimi due.
+Quindi a dispetto della tecnologia adoperata una simpatica *interfaccia grafica web* (detta **Web UI** o **WUI**) sviluppata con HTML, CSS e JavaScript con accoglierà l'utente mostrando in forma tabellare le persone contenute nella lista e permettendo di effettuare le diverse **operazioni CRUD** con gran stile ed eleganza 🎨 grazie all'uso della magia di [Bootstrap](https://getbootstrap.com/) che rende la **WUI** più accattivante 🖌️
 
-Ti guideremo passo passo nella configurazione IDE con installazione dei plugin necessari e con il download dei software complementari essenziale per un favoloso sviluppo.
+## 🌐 Architettura ReST: Servizi CRUD e Operazioni su DBMS
 
-Per semplificare le cose, ti consigliamo di creare una cartella dedicata per i tuoi progetti Java e un'altra per i software complementari.
+L'architettura **REST** *(**Re**presentational **S**tate **T**ransfer)* è un'architettura per la progettazione di sistemi distribuiti come servizi web.
+Questo approccio mette l'accento sulla rappresentazione delle risorse e sull'interazione senza stato tra client e server.
 
-Prova a eseguire questo comando dal terminale:
+**REST** utilizza i metodi standard del protocollo **HTTP** per eseguire operazioni **CRUD** *(**C**reate **R**ead **U**pdate **D**elete)* solitamente su risorse conservate nei DB 🛢️.
 
-```bash
-md %USERPROFILE%\vs-workspace\java-workspace\.__apache__
-```
+**Quali sono i metodi HTTP usati nel ReST e a quali operazioni corrispondono?**
 
-In questo modo, avrai creato dentro la cartella del tuo utente una serie di cartelle specifiche:
-* `vs-workspace` la tua cartella personale per tutti i progetti, di qualsiasi linguaggio
-* `java-workspace` la cartella per i progetti Java
-* `.__apache__` conterrà i software complementari come [Tomcat](http://tomcat.apache.org/) e [Maven](https://maven.apache.org/download.cgi).
+* ➕ **POST** 🌱: per *creare* una risorsa; corrisponde al **C**reate **CRUD**, equivalente a un'operazione di `INSERT` **SQL** 🛢️.
+* 🔍 **GET** 📖: per *ottenere/leggere* una risorsa; corrisponde al **R**ead **CRUD**, simile a un'operazione di `SELECT` **SQL** 🛢️.
+* 🔄 **PUT** ♻️: per *aggiornare* una risorsa; corrisponde al **U**pdate **CRUD**, simile a un'operazione `UPDATE` **SQL** 🛢️.
+* ❌ **DELETE** 🗑️: per *eliminare* una risorsa; corrisponde al **D**elete **CRUD**, equivalente a un'operazione `DELETE` **SQL** 🛢️.
 
-## Configura il Tuo IDE 🛠️
+Questi metodi HTTP corrispondono alle operazioni **CRUD**, svolgendo un ruolo chiave nel nostro esempio, consentendo agli utenti di interagire con la nostra API in modo completo e sicuro. 🔗
 
-Apri Visual Studio Code, premi `CTRL + MAIUSC + P`, scrivi `User Settings (JSON)` e incolla nel file [settings.json](./es-01_2023-09-13/settings.json) la seguente configurazione grazie alla quale il tuo IDE ti permetterà di ottenere il massimo.
+### 😺 [ver 0.9](./v0.9-ALPHA_tomcat_complete_crud): Servlet and Tomcat 😺
 
-## Estensioni Essenziali 🧩
+Nella prima versione, sfruttiamo le **servlet** per gestire le richieste **HTTP**.
+Le servlet rispondendo totto la rotta `/api/person` restituiscono JSON e messaggi di Status HTTP per informare l'utente.
+La servlet [`PersonRouter.java`](v0.9-ALPHA_tomcat_complete_crud/src/main/java/routers/PersonRouter.java) altro non è che una speciale classe che estende `**HttpServlet**`, ed effettua l'overlad dei seguenti metodi:
+* 🔍 **doGet(…)** per 👁️ *visualizzazione delle persone*; se viene spedito anche l'`id` mostra una persona specifica 👤 della lista altrimenti mostra la lista completa 👥 in *formato JSON*.
+* 🌱 **doPost(…)** per ➕ *aggiungere una persona*, un simpatico messaggio di *HTTP* informerà se l'inserimento è o meno andato a buon fine nel gestionale.
+* **doPut(…)** per ✏️ *modificare una persona* aggiornando i diversi campi; un messaggio *HTTP* informerà se l'operazione si è o meno conclusa con successo.
+* **doDelete(…)** per ❌ *l'eliminazione di una persona** dalla lista; un messaggio *HTTP* informerà se l'operazione si è o meno conclusa con successo.
 
-Aggiungi le seguenti estensioni:
+Questo approccio lascia un grande onere al programmatore che deve scrivere molto codice per gestire i diversi eventi.
+In questo approccio non è stata implementata la persistenza quindi non si fa uso di nessun DBMS 🛢️, è stato usaot un semplice `ArrayList<Person> **people**`, di conseguenza ad ogni riavvio dell'applicazione le modifiche andranno perse
 
-* [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven)
-* [Community Server Connector](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-community-server-connector)
+### 🚀 [ver 1.0](./v1.0-spring_arraylist/): SpringBoot 🍃
 
-## Scarica i Software Complementari 📥
+Con la transizione a **SpringBoot** 🍃, il nostro codice si snellisce notevolmente.
+**SpringBoot** 🍃 semplifica la configurazione e offre un ambiente più strutturato per la creazione di applicazioni **Java** ☕.
+Qui, continuiamo a implementare le operazioni [**CRUD**](./v1.0-spring_arraylist/src/main/java/pkg/router/PersonRouter.java), ma con una maggiore efficienza grazie alle funzionalità di **SpringBoot** 🍃 che gestiscono molti dettagli di basso livello.
+Noterai una riduzione significativa del codice necessario rispetto all'implementazione con le sole servlet. 🌱
 
-Successivamente, scarica:
+### 🌐 [ver 2.0](./v2.0-spring_jpa/): Persistenza con H2DB 🛢️
 
-* L'**archivio zip binario** di [Maven](https://maven.apache.org/download.cgi) e estrailo nella cartella `.__apache__`.
-* L'ultima **versione .zip a 64 bit** di [Tomcat](http://tomcat.apache.org/), estraila nella stessa cartella.
-* Configura le estensioni indicando i percorsi delle cartelle di Maven e Tomcat.
-* riscrivi il file [apache-tomcat-*versione*\conf\tomcat-users.xml](./es-01_2023-09-13/tomcat-users.xml)
+La versione finale aggiunge la *persistenza dei dati* utilizzando [**H2DB**](https://www.h2database.com/) come database.
+Qui, introduciamo il concetto di *Object-Relational Mapping* (**ORM**) attraverso **JPA** (*Java Persistence API*)* e [**Hibernate**](https://hibernate.org).
+Ora, operare sui dati in sql sarà semplice come operare su un [`ArrayList`](./v2.0-spring_jpa/src/main/java/pkg/router/PersonRouter.java) in **Java** ☕ e le modifiche persistono anche dopo i riavvii grazie alla persistenza del database.
+**SpringBoot** 🍃, insieme a **JPA** e **Hibernate**, semplifica notevolmente l'interazione con il database. 🗃️
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<tomcat-users
-	version="1.0"
-	xmlns="http://tomcat.apache.org/xml"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
->
-	<role rolename="admin"/>
-	<role rolename="admin-script"/>
-	<role rolename="admin-gui"/>
-	<role rolename="manager"/>
-	<role rolename="manager-status"/>
-	<role rolename="manager-script"/>
-	<role rolename="manager-jmx"/>
-	<role rolename="manager-gui"/>
-	<user username="admin" password="admin" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="root" password="root" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="user" password="1234" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-	<user username="sa" password="sa" roles="admin,admin-script,admin-gui,manager,manager-status,manager-script,manager-jmx,manager-gui"/>
-</tomcat-users>
-```
+## 🤝 Lezioni Apprese
 
-## Creazione del Progetto 🚀
+Questo esperimento ha insegnato a **dissociare il frontend dal backend**, comprendere l'importanza della persistenza dei dati e l'evoluzione verso un'architettura orientata ai dati.
+L'uso del DBMS è cruciale e la flessibilità di JPA permette facilmente di cambiare DBMS in futuro. 🚀
 
-Apri Visual Studio Code, premi `CTRL + MAIUSC + P`, scrivi **Maven: Create Maven Project**, seleziona `maven-archetype-webapp` come Archetype e segui le istruzioni per fornire le informazioni necessarie.
+## 🚀 Contribuisci e Divertiti!
 
-## Configura il Progetto 🛠️
-
-Dopo aver scaricato tutte le dipendenze, modifica il file `pom.xml` sostituendo la versione di java con l'ultima attravero questo snippet
-
-```xml
-<maven.compiler.source>21</maven.compiler.source>
-<maven.compiler.target>21</maven.compiler.target>
-```
-
-Inoltre va inserito nella sessione `xml <dependencies>` la dipendenza di [**Tomcat Catalina**](https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina)
-
-```xml
-<dependency>
-	<groupId>org.apache.tomcat</groupId>
-	<artifactId>tomcat-servlet-api</artifactId>
-	<version>10.1.18</version>
-</dependency>
-```
-
-Assicurati di configurare correttamente il tuo progetto per sfruttare Jakarta EE e Maven al massimo.
-
-## Testing e Deploy 🚧
-
-Per testare l'applicazione, crea il pacchetto WAR e avvia il server Tomcat.
-Esegui il deploy del file WAR sul server e prova la tua applicazione su [localhost:8080/<artifactId>](http://localhost:8080/).
-Ricorda, ogni modifica del codice richiede la creazione di un nuovo file WAR per l'aggiornamento su Tomcat.
-
-## Agility Note 🏎️
-
-Anche se questo approccio potrebbe sembrare meno immediato rispetto ad Eclipse, una volta abituati, i vantaggi sono notevoli e garantiti dall'enorme versatilità di Maven.
-*Sii agilmente creativo e divertiti a sviluppare la tua web app*! 🚀✨
+Contribuisci, esplora, impara e goditi il processo di creazione di servizi *RESTful* in Java. 🤓✨
 
 
 <a href="#TOP">&utrif; top &utrif;</a>
