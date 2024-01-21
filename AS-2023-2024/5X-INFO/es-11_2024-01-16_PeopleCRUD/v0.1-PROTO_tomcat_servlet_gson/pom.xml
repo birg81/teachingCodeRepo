@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>mainpkg</groupId>
+	<artifactId>peoplecrud</artifactId>
+	<name>${project.artifactId} Tomcat Webapp</name>
+	<version>0.1-PROTO</version>
+	<description>This is a prototype version and does not have the final Web UI</description>
+	<packaging>war</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<version>6.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>3.3.2</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>3.3.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.12.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.2.5</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>3.4.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>3.1.1</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>3.1.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
