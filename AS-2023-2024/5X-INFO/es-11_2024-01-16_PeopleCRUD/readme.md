@@ -35,6 +35,8 @@ Every approach follows a different path, yet each approach responds to a specifi
 
 👀 Interestingly, this approach allowed decoupling the *frontend* from the *backend*, so the *frontend* 🎭 practically remained unchanged for all versions, while the main changes focused on the *backend*!
 
+![Web UI](./wui.png)
+
 Therefore, regardless of the technology used, a charming *web graphical interface* (called **Web UI** or **WUI**) developed with HTML, CSS, and JavaScript will welcome the user, displaying people in a tabular form and allowing various **CRUD operations** with great style and elegance 🎨, thanks to the magic of [Bootstrap](https://getbootstrap.com/) making the **WUI** more appealing 🖌️.
 
 ## 🌐 REST Architecture: CRUD Services and DBMS Operations
@@ -82,6 +84,16 @@ Here, we introduce the concept of *Object-Relational Mapping* (**ORM**) through 
 Now, working with data in SQL will be as simple as working with an [`ArrayList`](./v2.0-spring_jpa/src/main/java/pkg/router/PersonRouter.java) in **Java** ☕, and changes persist even after restarts thanks to database persistence.
 **SpringBoot** 🍃, along with **JPA** and **Hibernate**, significantly simplifies interaction with the database. 🗃️
 
+📢 **Announcement**
+
+🛢️ The decision to use **H2DB** was driven by its convenience, but we could have chosen any DBMS supported by **SpringBoot** 🍃.
+**H2DB** is particularly suitable for prototyping and integrates well with **SpringBoot** 🍃.
+Similar to [phpMyAdmin](https://www.phpmyadmin.net) for PHP, it provides a minimal web interface accessible at [http://localhost:3000/h2-console/](http://localhost:3000/h2-console/).
+The required credentials can be found in the [application.properties](./v2.0-spring_jpa/src/main/resources/application.properties) file.
+Additionally, you need to input the absolute disk address of the `PeopleDB.mv.db` file preceded by `jdbc:h2` in the **JDBC URL** section.
+
+📡 **Note**: Remember that the `\` characters must be replaced with `\\`!
+
 ## 🤝 Lessons Learned
 
 This experiment has taught us to **decouple the frontend from the backend**, understand the importance of data persistence, and evolve toward a data-oriented architecture.
@@ -122,6 +134,8 @@ Ogni approccio persegue una strada diversa, ciononostate ogni approccio risponde
 ### 🎨 Interfaccia Utente Affascinante
 
 👀 È interessante notare che questo approccio ha permesso di scorrelare il *frontend* dal *backend*, di conseguenza la parte di *frontend* 🎭 è rimasta praticamente invariata uguale per tutte le versioni, mentre le uniche modifiche principali si sono concentrate nel *backend*!
+
+![Web UI](./WUI.png)
 
 Quindi a dispetto della tecnologia adoperata una simpatica *interfaccia grafica web* (detta **Web UI** o **WUI**) sviluppata con HTML, CSS e JavaScript con accoglierà l'utente mostrando in forma tabellare le persone contenute nella lista e permettendo di effettuare le diverse **operazioni CRUD** con gran stile ed eleganza 🎨 grazie all'uso della magia di [Bootstrap](https://getbootstrap.com/) che rende la **WUI** più accattivante 🖌️
 
@@ -167,6 +181,16 @@ La versione finale aggiunge la *persistenza dei dati* utilizzando [**H2DB**](htt
 Qui, introduciamo il concetto di *Object-Relational Mapping* (**ORM**) attraverso **JPA** (*Java Persistence API*)* e [**Hibernate**](https://hibernate.org).
 Ora, operare sui dati in sql sarà semplice come operare su un [`ArrayList`](./v2.0-spring_jpa/src/main/java/pkg/router/PersonRouter.java) in **Java** ☕ e le modifiche persistono anche dopo i riavvii grazie alla persistenza del database.
 **SpringBoot** 🍃, insieme a **JPA** e **Hibernate**, semplifica notevolmente l'interazione con il database. 🗃️
+
+📢 **Announcement**
+
+🛢️ La decisione di utilizzare **H2DB** è stata motivata dalla sua praticità, ma avremmo potuto scegliere qualsiasi DBMS supportato da **SpringBoot** 🍃.
+**H2DB** è particolarmente adatto per la creazione di prototipi e si integra bene con **SpringBoot** 🍃.
+Simile a [phpMyAdmin](https://www.phpmyadmin.net) per PHP, offre un'interfaccia web minimale accessibile all'indirizzo [http://localhost:3000/h2-console/](http://localhost:3000/h2-console/).
+Le credenziali necessarie sono disponibili nel file [application.properties](./v2.0-spring_jpa/src/main/resources/application.properties).
+Inoltre, è necessario inserire l'indirizzo assoluto sul disco del file `PeopleDB.mv.db` preceduto da `jdbc:h2` nella sezione **JDBC URL**.
+
+📡 **Nota**: Ricorda che i caratteri `\` devono essere sostituiti con `\\`!
 
 ## 🤝 Lezioni Apprese
 
