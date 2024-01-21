@@ -20,7 +20,7 @@ This repository is an exciting adventure in the world of creating RESTful servic
 
 ## 🌟 Repository Features
 
-This code allows the management of a list of people represented by the class `class **Person**(*id*, *firstname*, *lastname*, *age*)` 👤 in **Java** ☕ using different approaches that will be illustrated below.
+This code allows the management of a list of people represented by the class `class Person(id, firstname, lastname, age)` 👤 in **Java** ☕ using different approaches that will be illustrated below.
 
 ### A Single Car 🚗 with Different Engines
 
@@ -58,7 +58,7 @@ These HTTP methods correspond to the operations **CRUD**, playing a crucial role
 In the first version, we leverage **servlets** to handle HTTP requests.
 Servlets respond along the `/api/person` route by returning JSON and HTTP status messages to inform the user.
 
-The servlet [`PersonRouter.java`](v0.9-ALPHA_tomcat_complete_crud/src/main/java/routers/PersonRouter.java) is nothing more than a special class that extends `**HttpServlet**` and overrides the following methods:
+The servlet [`PersonRouter.java`](v0.9-ALPHA_tomcat_complete_crud/src/main/java/routers/PersonRouter.java) is nothing more than a special class that extends `HttpServlet` and overrides the following methods:
 
 * 🔍 **doGet(…)** for 👁️ *viewing people*; if an `id` is sent, it shows a specific 👤 person from the list; otherwise, it displays the complete list of people 👥 in *JSON format*.
 * 🌱 **doPost(…)** for ➕ *adding a person*; an HTTP message will inform whether the insertion was successful or not in the manager.
@@ -67,7 +67,7 @@ The servlet [`PersonRouter.java`](v0.9-ALPHA_tomcat_complete_crud/src/main/java/
 
 This approach leaves a significant burden on the programmer, who must write a lot of code to handle different events.
 In this approach, no persistence has been implemented, so no DBMS 🛢️ is used.
-A simple `ArrayList<Person> **people**` is used, so changes will be lost every time the application is restarted.
+A simple `ArrayList<Person> people` is used, so changes will be lost every time the application is restarted.
 
 ### 🚀 [ver 1.0](./v1.0-spring_arraylist/): SpringBoot 🍃
 
@@ -145,14 +145,14 @@ Questi metodi HTTP corrispondono alle operazioni **CRUD**, svolgendo un ruolo ch
 
 Nella prima versione, sfruttiamo le **servlet** per gestire le richieste **HTTP**.
 Le servlet rispondendo totto la rotta `/api/person` restituiscono JSON e messaggi di Status HTTP per informare l'utente.
-La servlet [`PersonRouter.java`](v0.9-ALPHA_tomcat_complete_crud/src/main/java/routers/PersonRouter.java) altro non è che una speciale classe che estende `**HttpServlet**`, ed effettua l'overlad dei seguenti metodi:
+La servlet [`PersonRouter.java`](v0.9-ALPHA_tomcat_complete_crud/src/main/java/routers/PersonRouter.java) altro non è che una speciale classe che estende `HttpServlet`, ed effettua l'overlad dei seguenti metodi:
 * 🔍 **doGet(…)** per 👁️ *visualizzazione delle persone*; se viene spedito anche l'`id` mostra una persona specifica 👤 della lista altrimenti mostra la lista completa 👥 in *formato JSON*.
 * 🌱 **doPost(…)** per ➕ *aggiungere una persona*, un simpatico messaggio di *HTTP* informerà se l'inserimento è o meno andato a buon fine nel gestionale.
 * **doPut(…)** per ✏️ *modificare una persona* aggiornando i diversi campi; un messaggio *HTTP* informerà se l'operazione si è o meno conclusa con successo.
 * **doDelete(…)** per ❌ *l'eliminazione di una persona** dalla lista; un messaggio *HTTP* informerà se l'operazione si è o meno conclusa con successo.
 
 Questo approccio lascia un grande onere al programmatore che deve scrivere molto codice per gestire i diversi eventi.
-In questo approccio non è stata implementata la persistenza quindi non si fa uso di nessun DBMS 🛢️, è stato usaot un semplice `ArrayList<Person> **people**`, di conseguenza ad ogni riavvio dell'applicazione le modifiche andranno perse
+In questo approccio non è stata implementata la persistenza quindi non si fa uso di nessun DBMS 🛢️, è stato usaot un semplice `ArrayList<Person> people`, di conseguenza ad ogni riavvio dell'applicazione le modifiche andranno perse
 
 ### 🚀 [ver 1.0](./v1.0-spring_arraylist/): SpringBoot 🍃
 
