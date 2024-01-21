@@ -1,6 +1,0 @@
-httptools
-uvicorn
-fastapi
-jinja2
-pydantic
-sqlalchemy
