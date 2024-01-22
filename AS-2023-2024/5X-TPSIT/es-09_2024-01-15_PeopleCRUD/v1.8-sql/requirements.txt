@@ -1,0 +1,6 @@
+httptools
+uvicorn
+fastapi
+jinja2
+pydantic
+mysql-connector-python

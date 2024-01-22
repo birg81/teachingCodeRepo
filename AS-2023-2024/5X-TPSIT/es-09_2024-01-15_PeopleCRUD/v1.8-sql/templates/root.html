@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="https://em-content.zobj.net/thumbs/60/lg/307/alien-monster_1f47e.png" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+<link rel="stylesheet" href="{{ url_for('static', path='/src/style/customstyle.css') }}" />
+<title>People List</title>
+</head>
+<body onload="people()">
+<script src="{{ url_for('static', path='/src/script/crudscript.js') }}"></script>
+<table class="table table-striped">
+<thead class="table-primary">
+<tr>
+<th>firstname</th>
+<th>lastname</th>
+<th>age</th>
+<th colspan="2" id="gear">&nbsp;</th>
+</tr>
+<tr>
+<td><input class="form-control" type="text" id="firstname_0" placeholder="(firstname)" aria-label="firstname" required /></td>
+<td><input class="form-control" type="text" id="lastname_0" placeholder="(lastname)" aria-label="lastname" required /></td>
+<td><input class="form-control" type="number" id="age_0" placeholder="(age)" aria-label="age" required /></td>
+<td id="backspace" onclick="erase()">&nbsp;</td>
+<td id="send" onclick="addPerson()">&nbsp;</td>
+</tr>
+</thead>
+<tbody id="buddylist">
+</tbody>
+</table>
+</body>
+</html>

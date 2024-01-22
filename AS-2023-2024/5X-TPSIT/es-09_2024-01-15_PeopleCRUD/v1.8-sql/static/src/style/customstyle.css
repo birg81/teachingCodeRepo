@@ -1,0 +1,13 @@
+#gear, #backspace, #send, .toggle_off, .toggle_on, .abort, .delete {
+	background-size: 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#backspace, #send, .toggle_ff, .toggle_on, .abort, .delete { cursor: pointer; }
+#gear { background-image: url('../img/gear.png'); }
+#send { background-image: url('../img/send.png'); }
+#backspace { background-image: url('../img/backspace.png'); }
+.toggle_off { background-image: url('../img/toggle_off.png'); }
+.toggle_on { background-image: url('../img/toggle_on.png'); }
+.abort { background-image: url('../img/abort.png'); }
+.delete { background-image: url('../img/delete.png'); }

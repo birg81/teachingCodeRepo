@@ -1,0 +1,1 @@
+senza ORM si connette a SQLite
