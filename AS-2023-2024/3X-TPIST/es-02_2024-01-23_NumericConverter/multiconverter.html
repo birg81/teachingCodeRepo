@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"/>
+<title>Istant Converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon"  type="image/png" href="https://em-content.zobj.net/source/microsoft/378/currency-exchange_1f4b1.png"/>
+<style>
+input[type='number'], div#toConvert > div > button {
+	width: 95%;
+}
+label {
+	font-weight: bolder;
+}
+span {
+	text-align: left;
+	font: 16px 'Courier New';
+}
+span#charX {
+	height: 60px;
+	width: 60px;
+	font: 60px 'Tahoma';
+}
+</style>
+</head>
+<body>
+<script>
+'use strict';
+function istantConvert() {
+	const n = parseInt(document.querySelector('#base10').value);
+	document.querySelector('#base2').innerHTML = `0b${(n>>>0).toString(2).padStart(32,'0')}`;
+	document.querySelector('#base8').innerHTML = `0o${(n>>>0).toString(8).padStart(11, '0')};`;
+	document.querySelector('#base16').innerHTML = `0h${(n>>>0).toString(16).toUpperCase().padStart(8,'0')}`;
+	document.querySelector('#charX').innerHTML = `&#${((n>>>0) & 0x3ffff)};`;
+}
+let goAway = false;
+function changeValue() {
+	const input = document.querySelector('#base10');
+	goAway = !goAway;
+	if(goAway) {
+		setInterval(() => {
+			const n = parseInt(input.value);
+			goAway = n < 0x1f500;
+			input.value = n +1;
+			istantConvert();
+		}, 50);
+	}
+}
+</script>
+<div id="toConvert">
+	<div><input type="number" id="base10" oninput="istantConvert()" value="0"/></div>
+	<div><label for="base2">base 2:</label><span id="base2"></span></div>
+	<div><label for="base8">base 8:</label><span id="base8"></span></div>
+	<div><label for="base16">base 16:</label><span id="base16"></span></div>
+	<div><label for="charX">character:</label><span id="charX"></span></div>
+	<div><button onclick="changeValue()">GO</button></div>
+</div>
+</body>
+</html>
