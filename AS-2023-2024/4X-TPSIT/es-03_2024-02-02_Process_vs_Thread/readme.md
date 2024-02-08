@@ -76,7 +76,7 @@ Adoperando il [teorema di Euclide](https://it.wikipedia.org/wiki/Teorema_dell%27
 
 ### 🚀 Processi
 
-Un processo è un'entità indipendente con la propria memoria che può essere eseguito in parallelo insieme ad altri pocessi.
+Un processo è un'entità indipendente con la propria memoria che può essere eseguito in parallelo insieme ad altri processi.
 Con Python 🐍 possiamo creare nuovi processi utilizzando il modulo `multiprocessing`, aprendo la strada al calcolo distribuito. 🌌
 
 ### 🧵 Thread
