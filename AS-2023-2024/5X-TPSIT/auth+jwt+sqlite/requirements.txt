@@ -1,0 +1,9 @@
+httptools
+uvicorn
+fastapi
+pydantic
+jinja2
+sqlalchemy
+pymysql
+pyjwt
+python-decouple
