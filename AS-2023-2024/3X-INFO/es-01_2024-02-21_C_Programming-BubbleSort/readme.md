@@ -134,6 +134,8 @@ Ecco una breve panoramica di cosa fa ciascuna funzione:
 Congratulazioni per aver esplorato il Fantastico Repository delle Operazioni sugli Array! 🚀 Speriamo che le funzioni di manipolazione degli array siano state utili e stimolanti per il vostro percorso di codifica.
 Che siate impegnati nell'ordinare, cercare o semplicemente esplorare le meraviglie degli array, queste funzioni sono qui per sostenervi in ogni passo del cammino.
 Buon codice, e che i vostri array siano sempre pieni di gioia ed efficienza! 🌟
+
+
 <a href="#TOP">&utrif; top &utrif;</a>
 
 ## 🔗 Links
