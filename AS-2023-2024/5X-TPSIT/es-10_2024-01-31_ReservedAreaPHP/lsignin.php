@@ -10,7 +10,7 @@ if(
 ) {
 	$username = trim($con->real_escape_string($_REQUEST['username']));
 	$secret = trim($con->real_escape_string($_REQUEST['secret']));
-	$rs = $con->query(trim("SELECT id, username FROM Users WHERE username = '{$username}' AND password = '$secret';"));
+	$rs = $con->query(trim("SELECT id, username FROM Users WHERE username = '{$username}' AND secret = '$secret';"));
 	if ($con->errno === 0 && $rs->num_rows > 0) {
 		$_SESSION['currentUser'] = $rs->fetch_assoc();
 		$con->close();
