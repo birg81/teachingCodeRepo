@@ -19,7 +19,7 @@
 		<dependency>	<!-- Tomcat -->
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-core</artifactId>
-			<version>10.1.17</version>
+			<version>10.1.19</version>
 		</dependency>
 		<dependency>	<!-- MySQL DB J-Connector -->
 			<groupId>com.mysql</groupId>
