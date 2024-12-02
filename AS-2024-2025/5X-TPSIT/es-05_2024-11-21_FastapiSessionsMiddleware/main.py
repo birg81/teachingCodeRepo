@@ -1,3 +1,4 @@
+import uuid
 import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
@@ -18,6 +19,7 @@ app.add_middleware(
 @app.get('/', response_class = HTMLResponse)
 async def root(req: Request):
 	req.session['counter'] = req.session.get('counter', 0) + 1
+	req.session['id'] = req.session.get('id', f'{uuid.uuid4().hex}')
 	return templates.TemplateResponse(
 		'root.html', {
 			'request': req
