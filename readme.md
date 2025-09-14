@@ -16,7 +16,7 @@
 # Who I am
 Hi guys, I'm [Biagio](mailto:birg81@gmail.com), teacher of Computer Science and Technology at the Industrial Technical Institute ["Renato Elia"](https://www.itirenatoelia.edu.it) in [Castellammare di Stabia: Naples - Italy](https://www.google.com/search?tbm=lcl&sxsrf=AB5stBgO37s5eLYepH0-yz1--_2RATqXyQ:1688454111955&q=I.T.I.+Renato+Elia&rflfq=1&num=20&stick=H4sIAAAAAAAAABWRTUpEQQyEmYXiep6rt5oTDPmtJAdw4Va8wDA8UBCFwRN5As_lKaxHQ5PuDvVVpR_u12OJWnh3ZXDBNdelcpQ1ElMGaW-sj-rokAhLR0BF231dQlGdbY5JHytEsjVLeXBpEzeB8JG3Jg30wGFiqpnZO8tVu-BhVB-xtnWhWqhGCSxjDGG6LrRXmvTS6VTPKfIJshGaHaXwdKeSFCrwsqZHaEMr9gA6Xu0lnZRsJ418xhGkV0nomLLcrSK02yYHZlqubcHWpushPzpoAFW2qyr7OjSkohkVhnUhXZShXLwnOeHaDbRwHmE7hu4MnNO6TBqTlvEDXLiJMGs5aoBgEKo6P0h-D4e_w_Hl_brdrm_b6fp1u20fl-_t5-74fH49P59PL9vn5fvr9PTxfvkHJSYLftoBAAA&ved=2ahUKEwjX1r_cvfT_AhWCgv0HHTjCDpIQjHJ6BQiZARAF&rldimm=701243887545456315#). This repository is where I'm going to share code co-developed during our lessons, providing interesting solutions to programming problems. You'll find different codes lists by subject and/or class, with a detailed description of how they work. Please, fell free share your favorite one(s) with friends and colleagues, and if you have any suggestions or edits, do not hesitate to let me know. I'll be happy to consider them. Please note that any resemblance to real events and/or to real people, living or dead, are **purely coincidental**!
 
-Now all you have to do is select the folder for the [current school year](./AS-2024-2025) and start immersing yourself in the world of programming.
+Now all you have to do is select the folder for the [current school year](./AS-2025-2026) and start immersing yourself in the world of programming.
 
 <hr/>
 
@@ -36,7 +36,7 @@ Condividi i tuoi preferiti con amici e colleghi e se hai suggerimenti o modifich
 Troverai esempi in vari linguaggi di programmazione e relativi framework adoperati.
 Ricorda, ogni riferimento a fatti o persone negli esempi di codice è **puramente casuale**!
 
-Adesso non ti resta che selezionare la cartella del [anno scolastico corrente](./AS-2024-2025) ed iniziare ad immergerti nel mondo della programmazione
+Adesso non ti resta che selezionare la cartella del [anno scolastico corrente](./AS-2025-2026) ed iniziare ad immergerti nel mondo della programmazione
 
 <a href="#TOP">&utrif; top &utrif;</a>
 
