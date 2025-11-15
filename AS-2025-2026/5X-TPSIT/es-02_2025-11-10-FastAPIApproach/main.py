@@ -29,7 +29,7 @@ async def greeting0(req:Request):
 		}
 	)
 
-# http://localhost:8000/api/approach1/?firstname=Biagio+Rosario&lastname=Greco
+# http://localhost:8000/api/approach1/?firstname=Bart&lastname=Simpson
 @app.get('/approach1', response_class = HTMLResponse)
 async def greeting1(firstname: str, lastname: str, req:Request):
 	return templates.TemplateResponse(
@@ -40,7 +40,7 @@ async def greeting1(firstname: str, lastname: str, req:Request):
 		}
 	)
 
-# http://localhost:8000/api/approach2/BiagioRosario/Greco
+# http://localhost:8000/api/approach2/Bart/Simpson
 @app.get('/approach2/{firstname}/{lastname}', response_class = HTMLResponse)
 async def greeting2(firstname: str, lastname: str, req:Request):
 	return templates.TemplateResponse(
@@ -51,7 +51,7 @@ async def greeting2(firstname: str, lastname: str, req:Request):
 		}
 	)
 
-# http://localhost:8000/api/approach3/BiagioRosario/Greco
+# http://localhost:8000/api/approach3/ + JSON {'firstname': 'Bart', 'lastname': 'Simpson'}
 @app.post('/approach3/', response_class = HTMLResponse)
 async def greeting3(p: Person, req: Request):
 	return templates.TemplateResponse(
