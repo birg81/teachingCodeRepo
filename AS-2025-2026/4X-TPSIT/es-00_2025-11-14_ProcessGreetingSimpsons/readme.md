@@ -159,8 +159,6 @@ process [pid: 885] has started..
 
 If you're working on Windows but want to run programs using `fork()` or test Unix-like C/Python code, use: 👉 [https://www.webvm.io](https://www.webvm.io)
 
-![webvm.io](https://webvm.io/assets/social_2024.png)
-
 It’s a fully functional Linux environment **inside your browser**, completely sandboxed, free, and instantaneous.
 You can:
 
@@ -350,8 +348,6 @@ process [pid: 885] has started..
 
 ## 🌐 Lavorare su Linux anche senza installarlo: [webvm.io](https://www.webvm.io) <img src="https://webvm.io/tower.ico" style="max-width:24px; max-height:24px;"> 🚀🖥️
 Se stai lavorando da Windows ma vuoi eseguire programmi che usano `fork()` o vuoi testare codice C/Python Unix-like, allora usa: 👉 [https://www.webvm.io](https://www.webvm.io)
-
-![webvm.io](https://webvm.io/assets/social_2024.png)
 
 È un ambiente Linux completo **nel browser**, totalmente sandboxed, gratuito e immediato.
 Puoi:
