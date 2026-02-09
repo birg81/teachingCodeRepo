@@ -1,8 +1,8 @@
 'use strict';
 
-const loadHeroes = async () => {
+const loadHeroes = async (filterTxt = '') => {
 	const heroes = await fetch(
-		'./jsondata.php'
+		`./jsondata.php?filterTxt=${filterTxt}`
 	).then(
 		data => data.json()
 	).catch(

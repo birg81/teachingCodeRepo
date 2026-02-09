@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 
-$filterTxt = isset($_REQUEST['filterTxt']) && !empty(trim($_REQUEST['filterTxt']))
+$filterTxt = (isset($_REQUEST['filterTxt']) && !empty(trim($_REQUEST['filterTxt'])))
 	? trim($_REQUEST['filterTxt'])
 	: '';
 
@@ -25,20 +25,23 @@ $q = "
 	";
 
 try {
-	$con = new PDO(
-		'mysql:host=localhost:3306;dbname=SuperHeroes',
-		'root',
-		''
+	$con = new mysqli('localhost:3306', 'root', '',
+		'SuperHeroes'
 	);
 
+	if ($con->connect_errno > 0)
+		throw new Exception($con->connect_error);
+
 	$rs = $con->query($q);
-	$heroes = $rs->fetchAll(PDO::FETCH_ASSOC);
+	$heroes = $rs->fetch_all(MYSQLI_ASSOC);
 
 	echo json_encode(
 		$heroes,
 		JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
 	);
-} catch (PDOException $e) {
+
+	$con->close();
+} catch (Throwable $e) {
 	http_response_code(500);
 	echo json_encode([
 		'message' => $e->getMessage()
