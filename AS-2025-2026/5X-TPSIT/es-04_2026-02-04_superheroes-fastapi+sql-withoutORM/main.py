@@ -37,9 +37,10 @@ def get_db():
 		con.close()
 
 # resolve query for get all heroes
-def get_heores(con):
+def get_heores(con, filterTxt:str = ''):
+	filterTxt=filterTxt.strip()
 	cur = con.cursor(dictionary = True)
-	cur.execute("""
+	cur.execute(f"""
 	SELECT
 		id,
 		firstname, lastname,
@@ -47,6 +48,10 @@ def get_heores(con):
 		supername
 	FROM
 		HeroesList
+	WHERE
+		firstname LIKE '%{filterTxt}%' OR
+		lastname LIKE '%{filterTxt}%' OR
+		supername LIKE '%{filterTxt}%'
 	ORDER BY
 		supername ASC,
 		lastname ASC,
@@ -67,8 +72,8 @@ async def index(req: Request):
 
 # pure json data
 @app.get('/api/superheroes')
-async def superheroesjson(con = Depends(get_db)):
-	return get_heores(con)
+async def superheroesjson(filterTxt:str = '', con = Depends(get_db)):
+	return get_heores(con, filterTxt)
 
 # Jinja Templating
 @app.get('/homeTab', response_class = HTMLResponse)

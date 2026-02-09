@@ -1,8 +1,8 @@
 'use strict';
 
-const loadHeroes = async () => {
+const loadHeroes = async (filterTxt = '') => {
 	const heroes = await fetch(
-		'./api/superheroes'
+		`./api/superheroes?filterTxt=${filterTxt}`
 	).then(
 		data => data.json()
 	).catch(
