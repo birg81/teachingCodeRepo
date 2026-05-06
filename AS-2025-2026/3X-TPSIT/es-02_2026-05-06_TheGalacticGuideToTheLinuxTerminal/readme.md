@@ -80,6 +80,7 @@ Unlike Windows (`C:\`), Linux uses a tree structure starting from the root **`/`
 | `/lib` and `/lib64` | Shared libraries required by programs in `/bin`. 📚 |
 | `/media` and `/mnt` | ***Mount points*** for external drives, USBs, temporary partitions. 🔌 |
 | `/home` | Users’ personal directories. 🛌 |
+| `/proc` | **Process info**: virtual filesystem providing kernel and process information. 🧠 |
 | `/root` | Root’s private space. 🔒 |
 | `/tmp` | *Temporary files* that disappear on reboot. 💨 |
 | `/var` | **Variable data** like logs and databases. 📈 |
@@ -243,6 +244,7 @@ A differenza di Windows (`C:\`), Linux ha una struttura ad albero che parte dall
 | `/lib` e `/lib64` | Le librerie condivise (i pezzi di codice) necessarie ai programmi in `/bin`. 📚 |
 | `/media` e `/mnt` | Cartelle del ***mounting***, punti di aggancio per dischi esterni, USB o partizioni temporanee. 🔌|
 | `/home` | Le stanze private degli *utenti*. 🛌 |
+| `/proc` | **Process info**: filesystem virtuale che fornisce informazioni sul kernel e sui processi. 🧠 |
 | `/root` | La stanza privata di Dio (**root**). 🔒 |
 | `/tmp` | *File temporanei* che spariscono al riavvio. 💨 |
 | `/var` | **Variable**: dati che cambiano spesso, come file di log e database. 📈|
