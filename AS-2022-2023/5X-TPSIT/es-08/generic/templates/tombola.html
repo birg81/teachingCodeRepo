@@ -1,0 +1,41 @@
+{# draw tombola card #}
+{% extends 'mainView.html' %}
+{% block styleOfPage %}
+<style>
+BODY {
+	font: 12pt 'Arial';
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+	background-image: linear-gradient(#00ffcc, #0099ff);
+}
+TABLE#CartellaTombola {
+	display: flex;
+	justify-content:center;
+	vertical-align: middle;
+}
+TABLE#CartellaTombola TD {
+	height: 130px;
+	width: 130px;
+	color: #000;
+	font-weigth: bold;
+	font-size: 60pt;
+	text-align: center;
+	background-color: #fff;
+}
+DIV#my_time{
+	position: absolute;
+	top: calc(100% - 24pt);
+}
+</style>
+{% endblock styleOfPage %}
+{% block bodyOfPage %}
+<div id='my_time'>{{ t }}</div>
+SERIE {{ cardserie }}
+<table id='CartellaTombola'>
+{% for i in range(15) %}
+{% if i % 5 == 0 %}<tr>{% endif %}
+<td>{{numbers[i]}}</td>
+{% if i % 5 == 4 %}</tr>{% endif %}
+{% endfor %}
+</table>
+{% endblock bodyOfPage %}

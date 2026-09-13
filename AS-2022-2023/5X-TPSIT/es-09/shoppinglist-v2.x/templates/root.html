@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" style="image/png" href="{{url_for('static', path='/src/img/shopping-cart.png')}}" />
+<title>{{title}}</title>
+<script src="{{url_for('static', path='/src/js/script.js')}}"></script>
+</head>
+<body onload="updatePageData()">
+<nav>
+<input id="item" type="search" placeholder="insert your item"/>
+<button onclick="addItem(document.querySelector('#item').value)">&#x1f6d2;</button>
+</nav>
+<app></app>
+</body>
+</html>

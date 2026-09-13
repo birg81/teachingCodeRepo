@@ -1,0 +1,22 @@
+[
+	{
+		"firstname":"Antonio",
+		"lastname": "Barbato",
+		"age": 24
+	},
+	{
+		"firstname":"Carla",
+		"lastname": "Donnarumma",
+		"age": 18
+	},
+	{
+		"firstname":"Fausto",
+		"lastname": "Gargiulo",
+		"age": 17
+	},
+	{
+		"firstname":"Imma",
+		"lastname": "Liguori",
+		"age": 15
+	}
+]

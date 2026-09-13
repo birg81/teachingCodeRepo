@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, shrink-to-fit=no, user-scalable=yes, initial-scale=1.0, maximum-scale=4.0, minimum-scale=0.5" />
+<title>Web App - Calcolatrice</title>
+</head>
+<body>
+{% if not risultato: %}
+<form method="GET" action="./operazione">
+	<input name="num1" type="text" required />
+	<input name="num2" type="text" required />
+	<select name="operazione">
+		<option>--Scegli operazione--</option>
+		<option value="+">+ Addizione</option>
+		<option value="-">- Sottrazione</option>
+		<option value="*">× Moltiplicazione</option>
+		<option value="/">÷ Divisione</option>
+	</select>
+	<input type="submit" value="calcola" />
+</form>
+{% else: %}
+<h1>{{risultato}}</h1>
+torna alla <a href="./">home</a>
+{% endif %}
+</body>
+</html>

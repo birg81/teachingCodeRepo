@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{title}}</title>
+<link rel="icon" style="image/png" href="{{url_for('static', path='/src/img/shopping-cart.png')}}" />
+</head>
+<body>
+<script src="{{url_for('static', path='/src/js/script.js')}}"></script>
+<form method="GET" action="./create">
+<input type="search" name="item" placeholder="insert item" />
+<input type="submit" value="&#x1f6d2;" />
+</form>
+<ul>{% for id, item in itemsList : %}
+<li>
+	<b>{{item}}</b>
+	<a href="./delete?id={{id}}">&#x274c;</a>
+	<a href="javascript:modifyItem({{id}}, '{{item}}')">&#x270d;</a>
+</li>
+{% endfor %}</ul>
+</body>
+</html>

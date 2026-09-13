@@ -1,0 +1,20 @@
+{# root.html #}
+{% extends 'mainView.html' %}
+{% block styleOfPage %}
+<style>
+@import url("{{url_for('static', path='/css/style.css')}}");
+</style>
+{% endblock styleOfPage %}
+{% block bodyOfPage %}
+<table>
+<tr>
+<th>&times;</th>
+{% for i in range(M): %}<th>{{ 1 + i }}</th>{% endfor %}
+</tr>
+{% for i in range(M * M): %}
+{% if i % M == 0 %}<tr><th>{{1 + i // M}}</th>{% endif %}
+<td>{{ (1 + i % M) * (1 + i // M) }}</td>
+{% if i % M == M - 1 %}</tr>{% endif %}
+{% endfor %}
+</table>
+{% endblock bodyOfPage %}
