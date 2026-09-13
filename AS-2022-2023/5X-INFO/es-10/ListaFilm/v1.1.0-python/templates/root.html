@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ricerca Film</title>
+<script>
+'use strict';
+async function seekMovies(tag) {
+	const out = document.querySelector(tag);
+	const seekStr = document.querySelector('#searchMovies').value;
+	let movies = '';
+	if(seekStr.trim().length >= 0) {
+		movies = await fetch(`./api/${seekStr.trim()}`)
+			.then(res => res.json())
+			.catch(e => console.log(e));
+		if(movies.length == 0)
+			out.innerHTML = 'Mi spiace non ci sono film!';
+		else {
+			console.log(movies);
+			let rows = '';
+			for(let movie of movies)
+				rows += `
+					<tr>
+					<td>${movie.film_id}</td>
+					<td>${movie.title}</td>
+					<td>${movie.description}</td>
+					<td>${(movie.length - movie.length %60) / 60}:${('' + movie.length%60).padStart(2, '0')}</td>
+					</tr>
+				`;
+			out.innerHTML = `<table>${rows}</table>`;
+		}
+	}
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="searchMovies" placeholder="scrivi il film da cercare" onkeyup="seekMovies('#app')"/>
+</form>
+<div id="app"></div>
+</body>
+</html>

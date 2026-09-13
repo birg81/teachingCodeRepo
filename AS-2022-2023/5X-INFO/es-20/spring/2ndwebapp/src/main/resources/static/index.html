@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="https://em-content.zobj.net/thumbs/60/lg/307/alien-monster_1f47e.png" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+<title>People List</title>
+<style>
+#gear, #backspace, #send, .toggle_off, .toggle_on, .abort, .delete {
+	background-size: 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#backspace, #send, .toggle_ff, .toggle_on, .abort, .delete { cursor: pointer; }
+#gear { background-image: url('./img/gear.png'); }
+#send { background-image: url('./img/send.png'); }
+#backspace { background-image: url('./img/backspace.png'); }
+.toggle_off { background-image: url('./img/toggle_off.png'); }
+.toggle_on { background-image: url('./img/toggle_on.png'); }
+.abort { background-image: url('./img/abort.png'); }
+.delete { background-image: url('./img/delete.png'); }
+</style>
+</head>
+<body onload="people()">
+<script src="script/restscript.js">
+</script>
+<table class="table table-striped">
+<thead class="table-primary">
+<tr>
+<th>firstname</th>
+<th>lastname</th>
+<th>age</th>
+<th colspan="2" id="gear">&nbsp;</th>
+</tr>
+<tr>
+<td><input class="form-control" type="text" id="firstname_0" placeholder="(firstname)" aria-label="firstname" required /></td>
+<td><input class="form-control" type="text" id="lastname_0" placeholder="(lastname)" aria-label="lastname" required /></td>
+<td><input class="form-control" type="number" id="age_0" placeholder="(age)" aria-label="age" required /></td>
+<td id="backspace" onclick="erase()">&nbsp;</td>
+<td id="send" onclick="addPerson()">&nbsp;</td>
+</tr>
+</thead>
+<tbody id="buddylist">
+</tbody>
+</table>
+</body>
+</html>
