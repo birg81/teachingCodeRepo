@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Messaggio del Giorno</title>
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+	color: #f8fafc;
+	padding: 20px;
+}
+.card {
+	background: rgba(255, 255, 255, 0.07);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 24px;
+	padding: 48px 40px;
+	max-width: 650px;
+	width: 100%;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	position: relative;
+}
+.card::before {
+	content: "“";
+	position: absolute;
+	top: -10px;
+	left: 30px;
+	font-size: 100px;
+	color: rgba(255, 255, 255, 0.15);
+	font-family: Georgia, serif;
+	line-height: 1;
+}
+.quote-text {
+	font-size: 1.5rem;
+	line-height: 1.6;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	color: #f1f5f9;
+	margin-bottom: 0;
+}
+.tag {
+	display: inline-block;
+	margin-bottom: 24px;
+	padding: 6px 16px;
+	background: rgba(255, 255, 255, 0.12);
+	border-radius: 20px;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #cbd5e1;
+}
+</style>
+</head>
+<body>
+<div class="card">
+	<div class="tag">Messaggio del Giorno</div>
+	<p class="quote-text">{quote}</p>
+</div>
+</body>
+</html>
