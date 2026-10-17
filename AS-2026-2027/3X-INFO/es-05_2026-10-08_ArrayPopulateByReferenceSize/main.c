@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
 
 	int array[n];
 	loadArrayWhileAZero(array, n, &n);
-	printf("The actual size of the array is %d!...\n");
+	printf("The actual size of the array is %d!...\n", n);
 	printArray(array, n);
 
 	return 0;

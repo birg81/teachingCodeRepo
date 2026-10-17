@@ -1,0 +1,203 @@
+[
+	{
+		"id": 1,
+		"name": "Mandrake Root",
+		"description": "A twisted root with a powerful scream, used in deep healing potions.",
+		"earth": 5,
+		"water": 2,
+		"fire": 0,
+		"air": 1
+	},	{
+		"id": 2,
+		"name": "Red Dragon Scale",
+		"description": "A tough and scorching fragment, infused with primal fire energy.",
+		"earth": 3,
+		"water": 0,
+		"fire": 5,
+		"air": 1
+	},	{
+		"id": 3,
+		"name": "Mermaid Tear",
+		"description": "A crystalline drop that preserves the power and melancholy of the ocean depths.",
+		"earth": 0,
+		"water": 5,
+		"fire": 1,
+		"air": 2
+	},	{
+		"id": 4,
+		"name": "Phoenix Feather",
+		"description": "Light and radiant, it emits constant warmth and is associated with rebirth.",
+		"earth": 1,
+		"water": 0,
+		"fire": 4,
+		"air": 5
+	},	{
+		"id": 5,
+		"name": "Shooting Star Dust",
+		"description": "Luminescent cosmic fragments that float gently if released.",
+		"earth": 1,
+		"water": 1,
+		"fire": 3,
+		"air": 5
+	},	{
+		"id": 6,
+		"name": "Lunar Shadow Essence",
+		"description": "A thick, dark liquid harvested during the nights of a new moon.",
+		"earth": 2,
+		"water": 3,
+		"fire": 0,
+		"air": 2
+	},	{
+		"id": 7,
+		"name": "Unicorn Horn",
+		"description": "Pure and iridescent white, possessing potent purifying properties.",
+		"earth": 4,
+		"water": 2,
+		"fire": 1,
+		"air": 2
+	},	{
+		"id": 8,
+		"name": "Bioluminescent Mushroom",
+		"description": "Grows in the deepest caves; glows with a hypnotic blue light.",
+		"earth": 4,
+		"water": 4,
+		"fire": 0,
+		"air": 1
+	},	{
+		"id": 9,
+		"name": "Basilisk Fang",
+		"description": "A sharp, lethal tooth infused with petrifying venom.",
+		"earth": 5,
+		"water": 1,
+		"fire": 2,
+		"air": 0
+	},	{
+		"id": 10,
+		"name": "Celestial Lotus Petal",
+		"description": "A flower that blooms only on the highest cloud-touched mountain peaks.",
+		"earth": 2,
+		"water": 3,
+		"fire": 1,
+		"air": 4
+	},	{
+		"id": 11,
+		"name": "Time Amber",
+		"description": "Millennial fossil resin that seems to trap whispers of the past.",
+		"earth": 5,
+		"water": 0,
+		"fire": 2,
+		"air": 1
+	},	{
+		"id": 12,
+		"name": "Eternal Ice",
+		"description": "A fragment of magical ice that never melts, even near flame.",
+		"earth": 1,
+		"water": 5,
+		"fire": 0,
+		"air": 3
+	},	{
+		"id": 13,
+		"name": "Salamander Ash",
+		"description": "Warm remains of a fire spirit; excellent for forge enchantments.",
+		"earth": 0,
+		"water": 0,
+		"fire": 5,
+		"air": 2
+	},	{
+		"id": 14,
+		"name": "Sylph Breath",
+		"description": "Pure wind enclosed in a glass vial as thin as silk.",
+		"earth": 0,
+		"water": 1,
+		"fire": 1,
+		"air": 5
+	},	{
+		"id": 15,
+		"name": "Mystic Cat Eye",
+		"description": "A natural gem that shifts colors depending on the intentions of its beholder.",
+		"earth": 3,
+		"water": 2,
+		"fire": 2,
+		"air": 2
+	},	{
+		"id": 16,
+		"name": "Runic Earth Tortoise Shell",
+		"description": "A shell engraved with ancient symbols of protection and longevity.",
+		"earth": 5,
+		"water": 2,
+		"fire": 0,
+		"air": 0
+	},	{
+		"id": 17,
+		"name": "Temporal Snail Slime",
+		"description": "A viscous substance capable of slowing down or speeding up nearby objects.",
+		"earth": 2,
+		"water": 4,
+		"fire": 0,
+		"air": 1
+	},	{
+		"id": 18,
+		"name": "Purified Volcanic Sulfur",
+		"description": "Pungent yellow crystals, essential for alchemical transmutations.",
+		"earth": 2,
+		"water": 0,
+		"fire": 5,
+		"air": 1
+	},	{
+		"id": 19,
+		"name": "Aurora Dew",
+		"description": "Harvested from clover leaves before sunrise; brings mental clarity.",
+		"earth": 1,
+		"water": 4,
+		"fire": 1,
+		"air": 3
+	},	{
+		"id": 20,
+		"name": "Gryphon Talon",
+		"description": "Sturdy and sharp, combining the strength of the earth with the fierceness of the sky.",
+		"earth": 4,
+		"water": 0,
+		"fire": 2,
+		"air": 3
+	},	{
+		"id": 21,
+		"name": "Resonant Quartz Crystal",
+		"description": "Emits a continuous harmonic vibration when struck gently.",
+		"earth": 4,
+		"water": 1,
+		"fire": 1,
+		"air": 3
+	},	{
+		"id": 22,
+		"name": "Destiny Hourglass Sand",
+		"description": "Golden grains that seem to move autonomously along invisible currents.",
+		"earth": 3,
+		"water": 0,
+		"fire": 2,
+		"air": 4
+	},	{
+		"id": 23,
+		"name": "Chimera Wool",
+		"description": "Multicolored fibers that change temperature to the touch, from ice-cold to scorching.",
+		"earth": 2,
+		"water": 1,
+		"fire": 4,
+		"air": 2
+	},	{
+		"id": 24,
+		"name": "Blood Coral Algae",
+		"description": "Gathered in volcanic sea depths, blending the power of water and fire.",
+		"earth": 1,
+		"water": 4,
+		"fire": 4,
+		"air": 0
+	},	{
+		"id": 25,
+		"name": "Hippogriff Feather",
+		"description": "Soft yet proud, ideal for instilling lightness into levitation spells.",
+		"earth": 2,
+		"water": 1,
+		"fire": 1,
+		"air": 5
+	}
+]

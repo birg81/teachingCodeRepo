@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>🧙 Grimoire Ingredients Catalog</title>
+<link rel="stylesheet" href="./mystyle.css">
+</head>
+<body>
+
+<div class="container">
+<header>
+	<h1>📜 Grimoire Ingredients Catalog</h1>
+	<p class="subtitle">Consult the sacred database through the Python HTTP socket bridge (Pure CSS / No Bootstrap)</p>
+</header>
+
+<!-- Loading State -->
+<div id="loading" class="text-center">
+	<div class="spinner"></div>
+	<p style="color: var(--gold);">Opening the grimoire and summoning ingredients...</p>
+</div>
+
+<!-- Error State -->
+<div id="error-message" class="alert alert-danger d-none">
+	<h3 style="margin-top: 0;">⚠️ Summoning Failed!</h3>
+	<p id="error-text">Could not connect to the Python server. Make sure it is running on port 8080.</p>
+</div>
+
+<!-- Empty State -->
+<div id="empty-message" class="alert alert-warning d-none">
+	The grimoire is empty. No magical components found.
+</div>
+
+<!-- Ingredients Grid -->
+<div id="ingredients-container" class="grid">
+	<!-- Dynamic cards will be injected here -->
+</div>
+</div>
+<script async src="./grimoire.js"></script>
+</body>
+</html>
