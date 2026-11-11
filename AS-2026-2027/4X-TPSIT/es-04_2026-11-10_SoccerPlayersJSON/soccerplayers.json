@@ -1,0 +1,32 @@
+[
+	{
+		"fullname": "Oliver Hutton",
+		"n": 10,
+		"position": "F",
+		"team": "New Team"
+	},
+	{
+		"fullname": "Benji Price",
+		"n": 1,
+		"position": "G",
+		"team": "New Team"
+	},
+	{
+		"fullname": "Mark Lenders",
+		"n": 9,
+		"position": "F",
+		"team": "Muppet FC"
+	},
+	{
+		"fullname": "Tom Becker",
+		"n": 11,
+		"position": "M",
+		"team": "New Team"
+	},
+	{
+		"fullname": "Bruce Harper",
+		"n": 4,
+		"position": "D",
+		"team": "New Team"
+	}
+]
