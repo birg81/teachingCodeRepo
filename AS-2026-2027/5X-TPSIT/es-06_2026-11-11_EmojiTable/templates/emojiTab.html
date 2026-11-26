@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="favicon icon shortcut" type="png" href="https://em-content.zobj.net/source/samsung/265/window_1fa9f.png"/>
+<title>Emoji Table</title>
+</head>
+<body>
+<table>
+{% for i in range(rows): %}
+	<tr>
+	{% for j in range(cols): %}
+		<td>&#{{0x1f435 + i + j}};</td>
+	{% endfor %}
+	</tr>
+{% endfor %}
+</table>
+</body>
+</html>
