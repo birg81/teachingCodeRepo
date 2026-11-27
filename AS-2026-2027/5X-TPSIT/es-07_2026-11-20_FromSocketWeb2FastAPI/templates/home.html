@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Home Pages</title>
+<link rel="stylesheet" href="{{url_for('static', path='grimoire.css')}}" />
+<link rel="icon" type="image/png" href="https://em-content.zobj.net/source/toss-face/381/house_1f3e0.png" />
+<style>
+:root {
+	--bg-color: #11727d;
+	--card-bg: #ffffff;
+	--text-color: #244b4b;
+	--text-muted: #668582;
+	--primary: #267c78;
+	--primary-light: #b8ded6;
+	--accent: #145b5a;
+	--gold-light: #008683;
+	--gold: #093434;
+	--border-color: #d5e7e2;
+}
+</style>
+</head>
+<body>
+<main class="container">
+<section class="card">
+<header>
+	<h1>Home Pages</h1>
+	<p class="subtitle">Explore my collection</p>
+</header>
+<ol>
+	<li>💬 <a href="./html/quotes"><b>Message of the Day</b></a> random quotes</li>
+	<li>⚽ <a href="./html/soccerplayers"><b>Soccer Players</b></a> a nice list</li>
+	<li>📖 <a href="./html/grimoire"><b>Arcane Grimoire</b></a> the wizard was here</li>
+	<li>🥅 <a href="./api/soccerplayers"><b>Soccer Players</b></a> json list</li>
+	<li>🔮 <a href="./api/ingredients"><b>Arcane Grimoire</b></a> json list</li>
+</ol>
+</section>
+</main>
+</body>
+</html>

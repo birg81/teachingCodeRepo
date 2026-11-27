@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Messaggio del Giorno</title>
+<link rel="stylesheet" href="{{url_for('static', path='motd.css')}}"/>
+<link rel="icon" type="image/png" href="https://em-content.zobj.net/source/emojidex/112/high-voltage-sign_26a1.png"/>
+</head>
+<body>
+<div class="card">
+	<div class="tag">Messaggio del Giorno</div>
+	<p class="quote-text">{{quote}}</p>
+</div>
+</body>
+</html>
